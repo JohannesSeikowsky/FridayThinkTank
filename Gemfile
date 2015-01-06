@@ -26,6 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Rails Html Sanitizer for HTML sanitization
 gem 'rails-html-sanitizer', '~> 1.0'
 
+# Devise for authentication
+gem 'devise', '~> 3.4.0'
 # Use Unicorn as the app server
 # gem 'unicorn'
 

@@ -38,4 +38,9 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  
+
+  # For Devise. In Production in (environments/production), host should be set to actual URL 
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
 end
