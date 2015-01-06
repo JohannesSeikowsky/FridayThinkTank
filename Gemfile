@@ -29,6 +29,9 @@ gem 'rails-html-sanitizer', '~> 1.0'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+# making database migrations after scaffold possible
+gem 'arel', '6.0.0.beta2'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
