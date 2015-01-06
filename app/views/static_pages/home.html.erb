@@ -1,2 +1,16 @@
-<h1>What was your most interesting thought this week?</h1>
-<h2> #interesting #insightful #ingenious </h2>
+<div class="col-xs-9">
+  <h1>What was your most interesting thought this week?</h1>
+  <h2> #interesting #insightful #future </h2>
+
+    <% @all_posts.each do |post| %>
+      <h3><%= post.title %> </h3>
+      <p> <%= post.content %></p>
+      <br>
+    <% end %> 
+</div>
+
+<div class="col-xs-3">
+  <h2> Contributors </h2>
+
+</div> 
+
