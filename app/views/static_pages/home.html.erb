@@ -12,6 +12,9 @@
 <div class="col-xs-2">
   <h2> Contributors </h2>
   <p> List of contributors goes here. </p> 
+    <% @users.each do |user| %>
+      <p> <%= user.email %> </p> 
+    <% end %> 
 </div> 
 
 

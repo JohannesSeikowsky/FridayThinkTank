@@ -1,6 +1,6 @@
 <h2> New Post </h2> 
 
-<%= form_for(@post) do |f| %>
+<%= form_for([@user,@post]) do |f| %>
   <% if @post.errors.any? %>
       <% @post.errors.full_messages.each do |message| %>
         <li><%= message %></li>
