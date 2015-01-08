@@ -8,6 +8,11 @@ class PostsController < ApplicationController
     @posts = @user.posts
   end
 
+  def writers_posts
+    @user = User.find(params[:id]) 
+    @posts = @user.posts  
+  end 
+
   # GET /posts/1
   # GET /posts/1.json
   def show

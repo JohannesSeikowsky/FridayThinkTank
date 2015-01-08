@@ -3,12 +3,13 @@
 <br>
 <br>
 
-<% @posts.each do |post| %>
-  <ol> 
-    <li> <a href="<%= user_post_path(@user,post) %>"> <%= post.title %> </a> - 
-    <%= link_to 'Edit', edit_user_post_path(@user,post) %> -
-    <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %> </li>
-  </ol> 
-<% end %>
+<ol> 
+  <% @posts.each do |post| %>
+      <li> <a href="<%= user_post_path(@user,post) %>"> <%= post.title %> </a> - 
+      <a href="<%= user_post_path(@user,post) %>"> Read </a> - 
+      <%= link_to 'Edit', edit_user_post_path(@user,post) %> -
+      <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %> </li>
+  <% end %>
+</ol> 
 
 

@@ -1,0 +1,8 @@
+
+<h3> All the blog posts of: <%= @user.email %> </h3> 
+
+<ol> 
+  <% @posts.each do |post| %>
+      <li> <a href="<%= user_post_path(@user,post) %>"> <%= post.title %> </a> </li>
+  <% end %>
+</ol> 
