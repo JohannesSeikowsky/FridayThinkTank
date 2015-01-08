@@ -31,14 +31,14 @@ gem 'devise', '~> 3.4.0'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
-# making database migrations after scaffold possible
 gem 'arel', '6.0.0.beta2'
+# making database migrations after scaffold possible
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 group :production do
-  gem 'pg'
+  gem 'sqlite3'
   gem 'rails_12factor'
 end        
 
