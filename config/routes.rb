@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   root "static_pages#home"
 
   match "writers_posts", to: "posts#writers_posts", via: :get
@@ -7,9 +8,11 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :posts
+  resources :profiles
   
   resources :users do 
     resources :posts  
+    resources :profiles
   end 
 
   # The priority is based upon order of creation: first created -> highest priority.
