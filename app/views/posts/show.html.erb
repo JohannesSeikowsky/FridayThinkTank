@@ -2,8 +2,4 @@
   <h3> <%= @post.title %> </h3>
 
   <p> <%= @post.content %> </p>
-
-  <p> Other Posts by the same author: 
-    <%= link_to "Posts", writers_posts_path(id: @post.user.id) %>
-  </p> 
 </div>
