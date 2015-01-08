@@ -38,7 +38,7 @@ gem 'arel', '6.0.0.beta2'
 # gem 'capistrano-rails', group: :development
 
 group :production do
-  gem 'sqlite3'
+  gem 'pg'
   gem 'rails_12factor'
 end        
 
