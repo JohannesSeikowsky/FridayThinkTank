@@ -1,16 +1,17 @@
-<h2> Write a new Post </h2> 
+<div class="col-xs-6 col-xs-offset-3">
+  <h2> Write a new Post </h2> 
 
-<%= form_for([@user,@post]) do |f| %>
-  <% if @post.errors.any? %>
-      <% @post.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+  <%= form_for([@user,@post]) do |f| %>
+    <% if @post.errors.any? %>
+        <% @post.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+    <% end %>
+
+    <%= f.text_field :title, placeholder: "Title", class: "form-control", style: "width: 500px" %> <br> 
+    <%= f.text_area :content, style: "height: 350px; width: 500px;", placeholder: "text", class: "form-control" %> <br>
+    <%= f.submit "Post the Post", class: "btn btn-md btn-warning" %>
   <% end %>
-
-  <%= f.text_field :title, placeholder: "Title", class: "form-control", style: "width: 500px" %> <br> 
-  <%= f.text_area :content, style: "height: 350px; width: 500px;", placeholder: "text", class: "form-control" %> <br>
-  <%= f.submit "Post the Post", class: "btn btn-md btn-warning" %>
-<% end %>
-
+</div>
 
 

@@ -1,29 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Posts</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.content %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+<br>
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+<% @posts.each do |post| %>
+  <ol> 
+    <li> <a href="<%= user_post_path(@user,post) %>"> <%= post.title %> </a> - 
+    <%= link_to 'Edit', edit_user_post_path(@user,post) %> -
+    <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %> </li>
+  </ol> 
+<% end %>
+
+
