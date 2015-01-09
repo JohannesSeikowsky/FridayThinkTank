@@ -1,11 +1,5 @@
 <div class="col-xs-6 col-xs-offset-3 post_show">
   <h3> <%= @post.title %> </h3>
+  <a href="#"> <h5> by <%= @post.user.email %> / All posts by author </h5> </a>
   <p> <%= @post.content %> </p>
-</div>
-
-<div class="col-xs-3">
-  <h4 id="twitter_blue">Written by: <br>
-   <%= @post.user.email %> </h4> 
-   <%= link_to "All posts by author" %>
-
 </div>
