@@ -5,7 +5,7 @@
 
   <div id="container">
     <% @all_posts.each do |post| %>
-      <div class="item"> <a href="<%= post_path(post) %>"> <%= post.title %> </a> </div>
+      <div class="item"> <a href="<%= post_path(post) %>"> <%= post.title %> </a> <%= post.content %> </div>
     <% end %> 
   </div> 
 </div>
@@ -18,13 +18,11 @@
 </div> 
 
 
-
-<script type="javascript">
-
+<!-- JQeury Masonry -->
+<script>
   var container = document.querySelector('#container');
   var msnry = new Masonry( container, {
     // options
     itemSelector: '.item'
   });
-
 </script> 
