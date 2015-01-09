@@ -1,8 +1,7 @@
 class StaticPagesController < ApplicationController
   def home
-    @all_posts = Post.all
+    @all_posts = Post.order("RANDOM()")
     @users = User.all
-    @character_number = rand(5..30)
   end
 
   def about
