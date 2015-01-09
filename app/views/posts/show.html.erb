@@ -1,5 +1,11 @@
-<div class="col-xs-6 col-xs-offset-3">
+<div class="col-xs-6 col-xs-offset-3 post_show">
   <h3> <%= @post.title %> </h3>
   <p> <%= @post.content %> </p>
-  <p> <%= @post.user.email %> </p>
+</div>
+
+<div class="col-xs-3">
+  <h4 id="twitter_blue">Written by: <br>
+   <%= @post.user.email %> </h4> 
+   <%= link_to "All posts by author" %>
+
 </div>

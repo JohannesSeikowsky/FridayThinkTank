@@ -15,25 +15,40 @@ body{
   }
 }
 
-html{
-    a:hover{
-      background: white;
-    }
-}
 
+/* Slogan */
 h1#title_question{
   color: #FF4E4E;
+  font-size: 40px;
 }
 
 #twitter_blue{
   color: #4499FF;
 }
 
+/* Post Index */
 .your_posts{
   ol{
     li{
       font-size: 22px; 
       line-height: 1.25;
+      margin-bottom: 15px; 
     }
   }
+}
+
+/* Header Links Hover */
+#header_link:hover{
+  color: white;
+}
+
+/* Post show */
+.about_show, .post_show{
+  background-color: white; 
+  padding: 25px 64px;
+  font-size: 14px;  
+  color: black; 
+  border-radius: 4px; 
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px; 
 }

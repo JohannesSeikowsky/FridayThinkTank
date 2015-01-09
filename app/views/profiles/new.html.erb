@@ -1,5 +1,26 @@
-<h1>New Profile</h1>
+<div class="col-xs-6 col-xs-offset-3">
 
-<%= render 'form' %>
+  <h1 id="twitter_blue">New Profile</h1>
 
-<%= link_to 'Back', profiles_path %>
+  <%= form_for(@profile) do |f| %>
+    <% if @profile.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+        <ul>
+        <% @profile.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field" style="width: 330px;">
+      <%= f.text_field :name, placeholder: "Name", class: "form-control" %> <br>
+      <%= f.text_area :description, placeholder: "About Yourself", class: "form-control", style: "height: 155px;" %> <br>
+      <%= f.text_field :website_url, placeholder: "Website (optional)", class: "form-control" %> <br>
+      <%= f.submit "Create Profile", class: "btn btn-md btn-warning" %>
+    </div>
+  <% end %>
+
+</div>
