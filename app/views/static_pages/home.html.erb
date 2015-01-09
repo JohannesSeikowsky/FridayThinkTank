@@ -5,7 +5,7 @@
 
   <div id="container">
     <% @all_posts.each do |post| %>
-     <a href="<%= post_path(post) %>"> <div class="item">  <h5> <%= post.title %> </h5> <%= post.content %> </div> </a>
+     <a href="<%= post_path(post) %>"> <div class="item">  <h5> <%= post.title %> </h5> <%= truncate(post.content, length: rand(90..180)) %> </div> </a>
     <% end %> 
   </div> 
 </div>

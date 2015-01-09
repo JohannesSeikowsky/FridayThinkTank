@@ -70,8 +70,15 @@ h1#title_question{
     background-color: #4499FF;
     margin: 0;    
   }
-  width: 22%;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  background-color: black;
+    margin: 7px;
+    padding: 5px;
+    font-size: 11px;
+    line-height: 1.4em;
+    float: left;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #444;
+    width: 20%;
+    background-color: black;
 }
