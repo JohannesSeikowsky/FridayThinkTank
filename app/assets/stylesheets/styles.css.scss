@@ -21,6 +21,7 @@ body{
 h1#title_question{
   color: #FF4E4E;
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 #twitter_blue{
@@ -65,6 +66,10 @@ h1#title_question{
 } 
 
 .item{
+  h5{
+    background-color: #4499FF;
+    margin: 0;    
+  }
   width: 22%;
   margin-right: 10px;
   margin-bottom: 10px;

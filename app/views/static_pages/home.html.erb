@@ -5,7 +5,7 @@
 
   <div id="container">
     <% @all_posts.each do |post| %>
-      <div class="item"> <a href="<%= post_path(post) %>"> <%= post.title %> </a> <%= post.content %> </div>
+     <a href="<%= post_path(post) %>"> <div class="item">  <h5> <%= post.title %> </h5> <%= post.content %> </div> </a>
     <% end %> 
   </div> 
 </div>
