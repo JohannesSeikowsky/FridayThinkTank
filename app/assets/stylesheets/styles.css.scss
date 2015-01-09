@@ -45,7 +45,7 @@ h1#title_question{
 
 /* Post show */
 .about_show, .post_show{
-  background-color: black; 
+  background-color: white; 
   padding: 25px 63px;
   color: black;
   border-radius: 4px; 
@@ -54,8 +54,5 @@ h1#title_question{
   p{
     font-size: 14px;
     line-height: 1.4;  
-  }
-  a{
-    color: #4499FF;
   }
 }
