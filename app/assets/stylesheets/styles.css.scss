@@ -5,6 +5,7 @@ body{
   -o-background-size: cover;
   background-size: cover;
   font-family: Courier; 
+  padding-bottom: 90px;
   .container-fluid{
     font-family: Courier;
     /* Arial and Helvetica are alternatives here */
@@ -44,11 +45,14 @@ h1#title_question{
 
 /* Post show */
 .about_show, .post_show{
-  background-color: white; 
-  padding: 25px 64px;
-  font-size: 14px;  
-  color: black; 
+  background-color: black; 
+  padding: 25px 84px;
+  color: black;
   border-radius: 4px; 
   -webkit-border-radius: 4px; 
   -moz-border-radius: 4px; 
+  p{
+    font-size: 14px;
+    line-height: 1.4;  
+  }
 }
