@@ -85,37 +85,59 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-family: Courier;
+  padding-bottom: 90px;
 }
-/* line 8, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+/* line 9, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
 body .container-fluid {
   font-family: Courier;
   /* Arial and Helvetica are alternatives here */
   color: white;
 }
-/* line 12, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+/* line 13, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
 body .container-fluid a {
   color: white;
 }
 
-/* line 19, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
-html a:hover {
-  background: white;
-}
-
-/* line 24, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+/* Slogan */
+/* line 21, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
 h1#title_question {
   color: #FF4E4E;
+  font-size: 40px;
 }
 
-/* line 28, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+/* line 26, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
 #twitter_blue {
   color: #4499FF;
 }
 
-/* line 34, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+/* Post Index */
+/* line 33, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
 .your_posts ol li {
   font-size: 22px;
   line-height: 1.25;
+  margin-bottom: 15px;
+}
+
+/* Header Links Hover */
+/* line 42, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+#header_link:hover {
+  color: white;
+}
+
+/* Post show */
+/* line 47, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.about_show, .post_show {
+  background-color: white;
+  padding: 25px 63px;
+  color: black;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+/* line 54, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.about_show p, .post_show p {
+  font-size: 14px;
+  line-height: 1.4;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
