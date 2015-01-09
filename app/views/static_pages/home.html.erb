@@ -1,5 +1,5 @@
 <div class="col-xs-10">
-  <h1>What was your most interesting thought this week?</h1>
+  <h1 id="title_question">What was your most interesting thought this week?</h1>
 
 <% @all_posts.each do |post| %>
       <h4> <a href="<%= post_path(post) %>"> <%= post.title %> </a> </h4>
@@ -8,7 +8,7 @@
 </div>
 
 <div class="col-xs-2">
-  <h2> Contributors </h2>
+  <h2 id="twitter_blue"> Contributors </h2>
     <% @users.each do |user| %>
       <p> <%= user.email %> </p> 
     <% end %>

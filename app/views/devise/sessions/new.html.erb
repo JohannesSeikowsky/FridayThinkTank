@@ -1,7 +1,7 @@
 <div class="col-xs-6 col-xs-offset-3">
 
   <br>
-  <h1 style: "margin-bottom: 30px;"> Log In </h1>
+  <h1 style: "margin-bottom: 30px;" id="twitter_blue"> Log In </h1>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   
     <div class="field" style="width: 240px;">
@@ -12,7 +12,7 @@
     <% if devise_mapping.rememberable? -%>
       <div class="field">
         <%= f.check_box :remember_me %>
-        <%= f.label :remember_me %>
+        <p style="display: inline; color: #4099FF;"> Remember me </p> 
       </div>
     <% end -%>
 

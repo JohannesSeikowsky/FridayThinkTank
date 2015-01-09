@@ -4,4 +4,36 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: Courier; 
+  .container-fluid{
+    font-family: Courier;
+    /* Arial and Helvetica are alternatives here */
+    color: white;
+    a{
+      color: white;
+    }
+  }
+}
+
+html{
+    a:hover{
+      background: white;
+    }
+}
+
+h1#title_question{
+  color: #FF4E4E;
+}
+
+#twitter_blue{
+  color: #4499FF;
+}
+
+.your_posts{
+  ol{
+    li{
+      font-size: 22px; 
+      line-height: 1.25;
+    }
+  }
 }

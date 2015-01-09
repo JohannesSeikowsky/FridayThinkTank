@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   match "writers_posts", to: "posts#writers_posts", via: :get
 
+  match "about", to: "static_pages#about", via: :get
+
   devise_for :users
 
   resources :posts

@@ -1,15 +1,15 @@
-<p id="notice"><%= notice %></p>
+<div class="col-xs-8 col-xs-offset-2 your_posts">
+  <p id="notice"><%= notice %></p>
+  <h1 id="twitter_blue"> All Your Posts </h1> 
+  <br>
+  <br>
 
-<br>
-<br>
-
-<ol> 
-  <% @posts.each do |post| %>
-      <li> <a href="<%= user_post_path(@user,post) %>"> <%= post.title %> </a> - 
-      <a href="<%= user_post_path(@user,post) %>"> Read </a> - 
-      <%= link_to 'Edit', edit_user_post_path(@user,post) %> -
-      <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %> </li>
-  <% end %>
-</ol> 
-
+  <ol> 
+    <% @posts.each do |post| %>
+        <li id="twitter_blue"> <a href="<%= user_post_path(@user,post) %>" id="twitter_blue"> <%= post.title %> </a> - 
+        <%= link_to 'Edit', edit_user_post_path(@user,post), id: "twitter_blue" %> -
+        <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' }, id: "twitter_blue" %> </li>
+    <% end %>
+  </ol> 
+</div>
 

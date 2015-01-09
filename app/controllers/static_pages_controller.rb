@@ -4,6 +4,6 @@ class StaticPagesController < ApplicationController
     @users = User.all
   end
 
-  def other_pages
+  def about
   end
 end
