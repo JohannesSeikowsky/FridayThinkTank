@@ -5,7 +5,13 @@
 
   <div id="container">
     <% @all_posts.each do |post| %>
-     <a href="<%= post_path(post) %>"> <div class="item">  <h4> <%= post.title %> </h4> <%= truncate(post.content, length: rand(90..180)) %> </div> </a>
+     <a href="<%= post_path(post) %>"> 
+        <div class="item">  
+          <h4> <%= post.title %> </h4> 
+          <%= truncate(post.content, length: rand(70..105)) %> 
+          <p> <%= post.user.name %> </p> 
+        </div> 
+     </a>
     <% end %> 
   </div> 
 </div>
@@ -13,12 +19,11 @@
 <div class="col-xs-2">
   <h2 id="twitter_blue"> Contributors </h2>
     <% @users.each do |user| %>
-      <p> <%= user.email %> </p> 
+      <p> <%= user.name %> </p> 
     <% end %>
 </div> 
 
-
-<!-- JQeury Masonry -->
+<!-- Initializing JQeury Masonry -->
 <script>
   var container = document.querySelector('#container');
   var msnry = new Masonry( container, {
