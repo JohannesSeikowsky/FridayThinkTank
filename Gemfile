@@ -31,6 +31,10 @@ gem 'devise', '~> 3.4.0'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+# Paperclip for Image Upload
+gem "paperclip", "~> 4.2"
+
+
 gem 'arel', '6.0.0.beta2'
 # making database migrations after scaffold possible
 

@@ -43,4 +43,7 @@ Rails.application.configure do
   # For Devise. In Production in (environments/production), host should be set to actual URL 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
+  # Telling Paperclip for Image Upload the path to ImageMagik, which is needed.
+  Paperclip.options[:command_path] = "/usr/local/bin/convert"
+
 end
