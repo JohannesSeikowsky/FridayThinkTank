@@ -1,6 +1,6 @@
 <% provide(:title, "Thought of the week - Homepage") %> 
 
-<div class="col-sm-12 col-md-10">
+<div class="col-sm-11">
   <h1 id="title_question">What was your most interesting thought this week? </h1>
 
   <div id="container">
@@ -16,7 +16,7 @@
   </div> 
 </div>
 
-<div class="col-md-2">
+<div class="col-sm-1">
   <h2 id="twitter_blue"> Newest: </h2>
   <% @newest_posts.each do |post| %> 
     <p> <%= link_to post.title, post_path(post) %> </p> 
@@ -26,7 +26,7 @@
     <p> <%= user.name %> </p> 
   <% end %>
   <h2 id="twitter_blue"> Thoughts: </h2>
-  <h2 id="" style="font-size: 66px;"> <%= @total_number_of_posts %> </h2>
+  <h2 id="" style="font-size: 66px; color: yellow;"> <%= @total_number_of_posts %> </h2>
 </div> 
 
 <!-- Initializing JQeury Masonry -->
