@@ -1,15 +1,19 @@
 Rails.application.routes.draw do
 
 
+
   root "static_pages#home"
 
-  match "writers_posts", to: "posts#writers_posts", via: :get
+  # match "writers_posts", to: "posts#writers_posts", via: :get
 
   match "about", to: "static_pages#about", via: :get
 
   devise_for :users
 
-  resources :posts
+  resources :posts do 
+    resources :comments
+  end 
+
   resources :profiles
   
   resources :users do 
