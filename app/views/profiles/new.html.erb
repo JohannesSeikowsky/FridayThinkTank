@@ -19,6 +19,7 @@
 
     <div class="field" style="width: 330px;">
       <%= f.text_area :description, placeholder: "Quick self-summary.", class: "form-control", style: "height: 155px;" %> <br>
+      <%= f.file_field :image %>
       <%= f.submit "Create Profile", class: "btn btn-md btn-warning" %>
     </div>
   <% end %>
