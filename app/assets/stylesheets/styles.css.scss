@@ -21,6 +21,9 @@ h1#title_question{
   color: #FF4E4E;
   font-size: 47px;
   margin-bottom: 30px;
+  @media (max-width: 890px){
+    font-size: 40px;   
+  }
 }
 
 /* Color */
