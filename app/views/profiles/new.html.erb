@@ -18,9 +18,7 @@
     <% end %>
 
     <div class="field" style="width: 330px;">
-      <%= f.text_field :name, placeholder: "Name", class: "form-control" %> <br>
-      <%= f.text_area :description, placeholder: "About Yourself", class: "form-control", style: "height: 155px;" %> <br>
-      <%= f.text_field :website_url, placeholder: "Website (optional)", class: "form-control" %> <br>
+      <%= f.text_area :description, placeholder: "Quick self-summary.", class: "form-control", style: "height: 155px;" %> <br>
       <%= f.submit "Create Profile", class: "btn btn-md btn-warning" %>
     </div>
   <% end %>
