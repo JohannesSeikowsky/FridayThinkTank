@@ -6,7 +6,6 @@ class ApplicationController < ActionController::Base
   # Part 1: Addin a name attribute to the Devise User model
   before_action :configure_devise_permitted_parameters, if: :devise_controller?
 
-
   private
   # Overwriting the sign_out redirect path method / Devise
   def after_sign_out_path_for(user)

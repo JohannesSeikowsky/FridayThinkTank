@@ -17,10 +17,13 @@
 </div>
 
 <div class="col-xs-2">
-  <h2 id="twitter_blue"> Contributors </h2>
+  <h2 id="twitter_blue"> Newest: </h2>
+  <h2 id="twitter_blue"> Contributors: </h2>
   <% @users.each do |user| %>
     <p> <%= user.name %> </p> 
   <% end %>
+  <h2 id="twitter_blue"> No. of thoughts: </h2>
+    <h1 style="text-align: center; font-size: 92px; color: yellow;"> <%= @total_number_of_posts %> </h1> 
 </div> 
 
 <!-- Initializing JQeury Masonry -->
