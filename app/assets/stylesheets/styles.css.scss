@@ -16,14 +16,14 @@ body{
   }
 }
 
-
 /* Slogan */
 h1#title_question{
   color: #FF4E4E;
-  font-size: 54px;
+  font-size: 47px;
   margin-bottom: 30px;
 }
 
+/* Color */
 #twitter_blue{
   color: #4499FF;
 }
@@ -64,13 +64,14 @@ h1#title_question{
   p{
     font-size: 14px;
     line-height: 1.45;  
+    font-family: Courier;
   }
-  h3,a{
+  h3, a{
     background-color: #4499FF;
   }
 }
 
-/* JQuery Masonry CSS */
+/* Pin Wall - JQuery Masonry CSS */
 #container{
 } 
 
@@ -79,15 +80,24 @@ h1#title_question{
     background-color: #4499FF;
     margin: 0 0 6px 0;
   }
-    margin: 7px;
-    padding: 7px;
-    font-size: 0px 12px 12px 12px;
-    line-height: 1.4em;
-    float: left;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 10px #444;
-    width: 20%;
-    background-color: black;
+  margin: 7px;
+  padding: 7px;
+  font-size: 0px 12px 12px 12px;
+  line-height: 1.4em;
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #444;
+  width: 22%;
+  background-color: black;
+  p{
+    margin: 4px 0px 0px 1px;
+  }
 }
+
+
+
+
+
+
