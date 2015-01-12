@@ -16,22 +16,12 @@
       <%= f.text_area :content, class: "form-control"%> <br> 
       <%= f.submit "Post", class: "btn btn-md btn-warning" %> 
     <% end %> 
+    <br>
+    <br>
+    <% @post.comments.each do |comment| %> 
+      <p style="margin-bottom: 20px;"> <%= comment.content %> </p>
+    <% end %> 
   </div>
 </div> 
 
-<br>
 
-  <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 post_show">
-      <% if @post.comments.any? %>
-        <p> Comments on this post: </p>
-        <br>
-        <% @post.comments.each do |comment| %> 
-          <p> <%= comment.content %> </p>
-          <br>
-        <% end %> 
-      <% else %> 
-       <p> No comments have been added so far. </p>
-      <% end %> 
-    </div>
-  </div>

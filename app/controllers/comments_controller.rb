@@ -25,6 +25,7 @@ class CommentsController < ApplicationController
     @comment = @post.comments.build(comment_params)
     @comment.save
     respond_with(@post)
+    flash[:notice] = "Your comment has been added."
   end
 
   def update
