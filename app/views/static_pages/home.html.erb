@@ -1,8 +1,7 @@
 <% provide(:title, "Thought of the week - Homepage") %> 
 
-<div class="col-xs-10">
-  <h1 id="title_question" style="display: inline;">What was your most interesting thought this week? </h1>
-  <p style="display: inline; color: yellow;"> .</p> 
+<div class="col-sm-12 col-md-10">
+  <h1 id="title_question">What was your most interesting thought this week? </h1>
 
   <div id="container">
     <% @all_posts.each do |post| %>
@@ -17,7 +16,7 @@
   </div> 
 </div>
 
-<div class="col-xs-2">
+<div class="col-md-2">
   <h2 id="twitter_blue"> Newest: </h2>
   <% @newest_posts.each do |post| %> 
     <p> <%= link_to post.title, post_path(post) %> </p> 
