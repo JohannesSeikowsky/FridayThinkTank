@@ -16,11 +16,10 @@
       <%= f.text_area :content, class: "form-control"%> <br> 
       <%= f.submit "Post", class: "btn btn-md btn-warning" %> 
     <% end %> 
-    <br>
-    <br>
-    <% @post.comments.each do |comment| %> 
-      <p style="margin-bottom: 20px;"> <%= comment.content %> </p>
-    <% end %> 
+      <% @post.comments.each do |comment| %> 
+        <div style="margin-top: 30px;"> <%= comment.content %> </div>
+      <% end %> 
+    </div>
   </div>
 </div> 
 
