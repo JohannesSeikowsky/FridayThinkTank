@@ -18,7 +18,7 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
     @user = @post.user
-    @profile = @user.profiles.last
+    @profile = @user.profile
     @new_comment = @post.comments.build
   end
 

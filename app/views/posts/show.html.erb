@@ -1,10 +1,9 @@
 <% provide(:title, "Thought of the week - Post") %> 
 
 <div class="row">
-
   <div class="col-md-3">
     <div class="profile_on_post">
-      <a href="<%= user_profiles_path(@user) %>"> 
+      <a href="<%= user_profile_path(@user) %>"> 
         <%= image_tag(@profile.image) %>
         <h3 id="twitter_blue"> <%= @user.name %> </h3> 
       </a>
@@ -32,5 +31,3 @@
     </div>
   </div>
 </div> 
-
-

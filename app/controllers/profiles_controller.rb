@@ -1,5 +1,5 @@
 class ProfilesController < ApplicationController
-  before_action :set_profile, only: [:show, :edit, :update, :destroy]
+  before_action :set_profile, only: [:edit, :update, :destroy]
 
   respond_to :html
 
@@ -11,13 +11,13 @@ class ProfilesController < ApplicationController
   end
 
   def show
-    respond_with(@profile)
+    @user = current_user
+    @profile = @user.profile
   end
 
   def new
     @user = current_user
-    @profile = @user.profiles.build
-    respond_with(@profile)
+    @profile = @user.build_profile
   end
 
   def edit
@@ -25,10 +25,10 @@ class ProfilesController < ApplicationController
 
   def create
     @user = current_user
-    @profile = @user.profiles.build(profile_params)
+    @profile = @user.build_profile(profile_params)
     @profile.save
     redirect_to root_path
-    flash[:notice] = "Profile has been created."
+    flash[:notice] = "Your profile has been created."
   end
 
   def update
