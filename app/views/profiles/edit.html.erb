@@ -1,6 +1,17 @@
 <h1>Editing Profile</h1>
 
-<%= render 'form' %>
+<%= form_for(@profile, url: user_profile_path, method: :patch) do |f| %>
+  <% if @profile.errors.any? %>
+    <% @profile.errors.full_messages.each do |message| %>
+      <h2><%= message %></h2>
+    <% end %>
+  <% end %>
 
-<%= link_to 'Show', @profile %> |
-<%= link_to 'Back', profiles_path %>
+  <div class="field">
+    <%= f.text_field :description %>
+
+    <%= f.submit "Edit Profile", class: "btn btn-md btn-warning" %>
+  </div>
+<% end %>
+
+

@@ -1,8 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @profile.description %>
-</p>
+<% unless @user.profile.nil? %> 
+  <p>
+    <strong>Description:</strong>
+    <%= @profile.description %>
+  </p>
 
-<%= image_tag(@profile.image(:medium)) %>
+  <%= image_tag(@profile.image(:medium)) %>
+<% else %>
+  
+  <% if user_signed_in? %>
+    <a href="<%= new_user_profile_path(@user) %>">
+      <h1 id="twitter_blue"> You have no profile yet - Make One </h1>
+    </a>
+  <% else %>
+    <h3 id="twitter_blue"> This author doesn't have a profile yet. </h3>  
+  <% end %>
+
+<% end %>
+

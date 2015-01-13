@@ -14,7 +14,7 @@
 
     <div class="field" style="width: 330px;">
       <h4 id="twitter_blue"> 1. Add Selfie </h4>
-      <%= f.file_field :image %> <br>
+      <%= f.file_field :image, id: "twitter_blue" %> <br>
       <h4 id="twitter_blue"> 2. Add Self-description </h4>
       <%= f.text_area :description, placeholder: "Mini self-description...", class: "form-control", style: "height: 155px;" %> <br>
       <%= f.submit "Create Profile", class: "btn btn-md btn-warning" %>

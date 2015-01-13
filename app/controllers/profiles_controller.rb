@@ -1,5 +1,5 @@
 class ProfilesController < ApplicationController
-  before_action :set_profile, only: [:edit, :update, :destroy]
+  before_action :set_profile, only: [:destroy]
 
   respond_to :html
 
@@ -11,7 +11,7 @@ class ProfilesController < ApplicationController
   end
 
   def show
-    @user = current_user
+    @user = User.find(params[:user_id])
     @profile = @user.profile
   end
 
@@ -21,6 +21,8 @@ class ProfilesController < ApplicationController
   end
 
   def edit
+    @user = current_user  
+    @profile = @user.profile  
   end
 
   def create
@@ -32,8 +34,10 @@ class ProfilesController < ApplicationController
   end
 
   def update
+    @user = current_user
+    @profile = @user.profile
     @profile.update(profile_params)
-    respond_with(@profile)
+    respond_with(@user,@profile)
   end
 
   def destroy
