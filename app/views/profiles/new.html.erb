@@ -3,6 +3,7 @@
 <div class="col-xs-6 col-xs-offset-3">
 
   <h1 id="twitter_blue">Make a Profile</h1>
+  <br>
 
   <%= form_for(@profile) do |f| %>
     <% if @profile.errors.any? %>
@@ -18,8 +19,10 @@
     <% end %>
 
     <div class="field" style="width: 330px;">
-      <%= f.text_area :description, placeholder: "Quick self-summary.", class: "form-control", style: "height: 155px;" %> <br>
-      <%= f.file_field :image %>
+      <h4 id="twitter_blue"> 1. Add Selfie </h4>
+      <%= f.file_field :image %> <br>
+      <h4 id="twitter_blue"> 2. Add Self-description </h4>
+      <%= f.text_area :description, placeholder: "Mini self-description...", class: "form-control", style: "height: 155px;" %> <br>
       <%= f.submit "Create Profile", class: "btn btn-md btn-warning" %>
     </div>
   <% end %>

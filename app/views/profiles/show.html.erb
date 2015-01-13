@@ -1,34 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @profile.name %>
-</p>
-
-<p>
   <strong>Description:</strong>
   <%= @profile.description %>
 </p>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @profile.image_url %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @profile.email %>
-</p>
-
-<p>
-  <strong>Website url:</strong>
-  <%= @profile.website_url %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @profile.user %>
-</p>
-
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
-<%= link_to 'Back', profiles_path %>
+<%= image_tag(@profile.image(:medium)) %>
