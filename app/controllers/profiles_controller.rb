@@ -13,7 +13,8 @@ class ProfilesController < ApplicationController
   end
 
   def new
-    @profile = Profile.new
+    @user = current_user
+    @profile = @user.profiles.build
     respond_with(@profile)
   end
 
@@ -21,9 +22,11 @@ class ProfilesController < ApplicationController
   end
 
   def create
-    @profile = Profile.new(profile_params)
+    @user = current_user
+    @profile = @user.profiles.build(profile_params)
     @profile.save
-    respond_with(@profile)
+    redirect_to root_path
+    flash[:notice] = "Profile has been created."
   end
 
   def update

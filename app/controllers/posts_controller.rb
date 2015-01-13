@@ -17,6 +17,8 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
+    @user = @post.user
+    @profile = @user.profiles.last
     @new_comment = @post.comments.build
   end
 
