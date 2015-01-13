@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-
-
   root "static_pages#home"
 
   # match "writers_posts", to: "posts#writers_posts", via: :get
