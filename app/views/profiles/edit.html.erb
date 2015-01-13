@@ -1,17 +1,22 @@
-<h1>Editing Profile</h1>
+<div class="col-xs-6 col-xs-offset-3">
 
-<%= form_for(@profile, url: user_profile_path, method: :patch) do |f| %>
-  <% if @profile.errors.any? %>
-    <% @profile.errors.full_messages.each do |message| %>
-      <h2><%= message %></h2>
+  <h1 id="twitter_blue">Editing Profile</h1>
+
+  <%= form_for(@profile, url: user_profile_path, method: :patch) do |f| %>
+    <% if @profile.errors.any? %>
+      <% @profile.errors.full_messages.each do |message| %>
+        <h2><%= message %></h2>
+      <% end %>
     <% end %>
+
+    <div class="field" style="width: 330px;">
+      <h4 id="twitter_blue"> 1. New Selfie </h4>
+      <%= f.file_field :image, id: "twitter_blue" %> <br>
+      <h4 id="twitter_blue"> 2. Better Self-description </h4>
+      <%= f.text_area :description, placeholder: "Mini self-description...", class: "form-control", style: "height: 155px;" %> <br>  
+      <%= f.submit "Edit Profile", class: "btn btn-md btn-warning" %>
+    </div> 
   <% end %>
 
-  <div class="field">
-    <%= f.text_field :description %>
-
-    <%= f.submit "Edit Profile", class: "btn btn-md btn-warning" %>
-  </div>
-<% end %>
-
+</div>
 

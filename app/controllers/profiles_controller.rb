@@ -29,7 +29,7 @@ class ProfilesController < ApplicationController
     @user = current_user
     @profile = @user.build_profile(profile_params)
     @profile.save
-    redirect_to root_path
+    redirect_to user_profile_path(@user)
     flash[:notice] = "Your profile has been created."
   end
 

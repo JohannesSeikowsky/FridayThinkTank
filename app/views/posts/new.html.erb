@@ -6,7 +6,7 @@
   <%= form_for([@user,@post]) do |f| %>
     <% if @post.errors.any? %>
         <% @post.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
+          <h5 id="twitter_blue"><%= message %></h5>
         <% end %>
     <% end %>
 

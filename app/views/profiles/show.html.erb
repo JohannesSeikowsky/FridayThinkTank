@@ -1,15 +1,29 @@
-<p id="notice"><%= notice %></p>
-
 <% unless @user.profile.nil? %> 
-  <p>
-    <strong>Description:</strong>
-    <%= @profile.description %>
-  </p>
+  <!-- If there is a User Profiel -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="profile_on_profile">
+          <%= image_tag(@profile.image) %>
+          <h3 id="twitter_blue"> <%= @user.name %> </h3> 
+          <h4 id="twitter_blue"> Thoughts: <%= @user.posts.count %> </h4> 
+          <p style="color:black;"> <%= h(@profile.description).gsub(/\n/, '<br/>').html_safe %> </p>
+      </div>
+    </div>
 
-  <%= image_tag(@profile.image(:medium)) %>
+    <div class="col-md-8">
+      <div class="posts_on_profile">
+        <h2 id="twitter_blue"> All Posts by author </h2> 
+        <% @user.posts.each do |post| %>
+          <h2 id="twitter_blue"> <%= post.title %> </h2> 
+        <% end %>
+      </div>
+    </div>
+  <!-- Closing Row -->
+  </div>
+
 <% else %>
-  
-  <% if user_signed_in? %>
+  <!-- If there is no User Profile -->  
+  <% if current_user == @user %>
     <a href="<%= new_user_profile_path(@user) %>">
       <h1 id="twitter_blue"> You have no profile yet - Make One </h1>
     </a>

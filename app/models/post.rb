@@ -1,7 +1,11 @@
 class Post < ActiveRecord::Base
 
-belongs_to :user
+# Validations
+validates :title, presence: true
+validates :content, presence: true
 
+# Associations
+belongs_to :user
 has_many :comments
 
 end

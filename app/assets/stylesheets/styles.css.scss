@@ -56,13 +56,16 @@ h1#title_question{
 }
 
 
-/* Post show */
+/* POST SHOW */
 .profile_on_post{
   img{
     width: 100%;
     height: auto;
     border: 8px solid white;
     border-radius: 4px;
+  }
+  a:hover{
+    background-color: white;
   }
 }
 
@@ -82,6 +85,32 @@ h1#title_question{
     background-color: #4499FF;
   }
 }
+
+/* PROFILE SHOW */
+
+.profile_on_profile{
+  img{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  a:hover{
+    background-color: white;
+  }
+}
+
+.posts_on_profile{
+  background-color: white;
+  padding: 40px;
+  h1, h2{
+    margin-top: 0px;
+    color: black;
+  }
+}
+
+
+
+
 
 /* Pin Wall - JQuery Masonry CSS */
 #container{
