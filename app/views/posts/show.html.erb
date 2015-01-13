@@ -4,8 +4,10 @@
 
   <div class="col-md-3">
     <div class="profile_on_post">
-      <%= image_tag(@profile.image) %>
-      <h3 id="twitter_blue"> <%= @user.name %> </h3> 
+      <a href="<%= user_profiles_path(@user) %>"> 
+        <%= image_tag(@profile.image) %>
+        <h3 id="twitter_blue"> <%= @user.name %> </h3> 
+      </a>
     </div>
   </div> 
 
