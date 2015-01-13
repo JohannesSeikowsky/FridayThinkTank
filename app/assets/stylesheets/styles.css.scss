@@ -57,6 +57,15 @@ h1#title_question{
 
 
 /* Post show */
+.profile_on_post{
+  img{
+    width: 100%;
+    height: auto;
+    border: 8px solid white;
+    border-radius: 4px;
+  }
+}
+
 .about_show, .post_show{
   background-color: white; 
   padding: 25px 50px 34px 45px;

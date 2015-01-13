@@ -2,12 +2,14 @@
 
 <div class="row">
 
-  <div class="col-md-1">
-    <%= image_tag(@profile.image(:medium)) %>
-    <h2> <%= @user.name %> </h2> 
+  <div class="col-md-3">
+    <div class="profile_on_post">
+      <%= image_tag(@profile.image) %>
+      <h3 id="twitter_blue"> <%= @user.name %> </h3> 
+    </div>
   </div> 
 
-  <div class="col-xs-12 col-sm-10 col-md-6 col-md-offset-2 post_show">
+  <div class="col-xs-12 col-sm-10 col-md-6 post_show">
     <h3> <%= @post.title %> </h3>
     <p> <%= h(@post.content).gsub(/\n/, '<br/>').html_safe %> </p>
   </div>
