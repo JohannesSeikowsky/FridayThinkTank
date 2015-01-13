@@ -23,7 +23,7 @@
   <% end %>
   <h2 id="twitter_blue"> People: </h2>
   <% @users.each do |user| %>
-    <p> <%= user.name %> </p> 
+    <p> <%= link_to user.name, user_profiles_path(user) %> </p> 
   <% end %>
   <h2 id="twitter_blue"> Thoughts: </h2>
   <h2 id="" style="font-size: 66px; color: yellow;"> <%= @total_number_of_posts %> </h2>

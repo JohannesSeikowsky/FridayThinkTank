@@ -4,7 +4,9 @@ class ProfilesController < ApplicationController
   respond_to :html
 
   def index
-    @profiles = Profile.all
+    # transforming the index action to show the last profile of a user
+    @user = current_user
+    @profile = @user.profiles.last
     respond_with(@profiles)
   end
 
