@@ -47,6 +47,9 @@ h1#title_question{
   color: white;
 }
 
+#header_link_highlight{
+ color: red; 
+}
 
 .sign_up_area{
   width: 300px;
@@ -76,6 +79,7 @@ h1#title_question{
   border-radius: 4px; 
   -webkit-border-radius: 4px; 
   -moz-border-radius: 4px; 
+  margin-bottom: 25px;
   p{
     font-size: 14px;
     line-height: 1.45;  
@@ -92,30 +96,42 @@ h1#title_question{
   img{
     width: 100%;
     height: auto;
+    border: 8px solid white;
     border-radius: 4px;
   }
   a:hover{
     background-color: white;
   }
+  p{
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    font-family: Courier;
+  }
 }
 
 .posts_on_profile{
   background-color: white;
-  padding: 40px;
-  h1, h2{
-    margin-top: 0px;
+  padding: 10px 40px 44px 40px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  h2{
     color: black;
+    background-color: #4499FF; 
+  }
+  a:hover{
+    color: yellow;
+  }
+  p{
+    margin-top: 0px;
   }
 }
 
 
-
-
-
 /* Pin Wall - JQuery Masonry CSS */
-#container{
-} 
-
 .item{
   h4{
     background-color: #4499FF;

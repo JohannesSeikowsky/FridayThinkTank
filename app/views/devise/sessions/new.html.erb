@@ -1,11 +1,11 @@
 <% provide(:title, "Log In") %> 
 
-<div class="col-xs-6 col-xs-offset-3">
+<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+<br>
 
-  <br>
   <h1 style: "margin-bottom: 30px;" id="twitter_blue"> Log In </h1>
+
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  
     <div class="field" style="width: 240px;">
       <%= f.email_field :email, autofocus: true, placeholder: "email", class: "form-control", style: "margin-bottom: 10px;" %> 
       <%= f.password_field :password, autocomplete: "off", placeholder: "password", class: "form-control"  %>
@@ -18,9 +18,7 @@
       </div>
     <% end -%>
 
-    <div class="actions">
-      <%= f.submit "Log in", class: "btn btn-md btn-warning" %>
-    </div>
+    <%= f.submit "Log in", class: "btn btn-md btn-warning" %>
   <% end %>
 
 </div>

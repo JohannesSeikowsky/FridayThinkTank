@@ -1,4 +1,4 @@
-<div class="col-xs-6 col-xs-offset-3">
+<div class="col-xs-12 col-sm-6 col-sm-offset-3">
 
   <h2 id="twitter_blue">Sign up</h2>
   <p id="twitter_blue"> Please pay some attention. Names and Password are not changable for now. </p>
@@ -12,7 +12,8 @@
 
       <% if @validatable %>
       <em id="twitter_blue">(<%= @minimum_password_length %> characters minimum)</em>
-      <% end %><br />
+      <% end %>
+      <br />
       <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: "form-control" %>
 
       <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password Repeat", class: "form-control" %>

@@ -19,7 +19,7 @@
             <li> <%= link_to "Your Profile", user_profile_path(current_user), id: "header_link" %> </li>          
             <li> <%= link_to "Edit Profile", edit_user_profile_path(current_user), id: "header_link" %> </li>                    
           <% else %> 
-            <li>  <%= link_to "Make Profile", new_user_profile_path(current_user), id: "header_link" %> </li>                  
+            <li>  <%= link_to "CREATE YOUR PROFILE", new_user_profile_path(current_user), id: "header_link_highlight" %> </li>
           <% end %> 
           <li>  <%= link_to "Your Posts", user_posts_path(current_user), id: "header_link"  %> </li> 
           <li>  <%= link_to "New Post", new_user_post_path(current_user), id: "header_link"  %> </li> 
