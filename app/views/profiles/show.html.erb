@@ -1,10 +1,12 @@
+<br>
+<br> 
+
 <% unless @user.profile.nil? %> 
   <!-- If there is a User Profiel -->
   <div class="row">
     <div class="col-md-3 col-md-offset-1">
       <div class="profile_on_profile">
           <%= image_tag(@profile.image) %>
-          <h3 id="twitter_blue"> <%= @user.name %> </h3> 
           <h4 id="twitter_blue"> Thoughts: <%= @user.posts.count %> </h4> 
           <p style="color:black;"> <%= h(@profile.description).gsub(/\n/, '<br/>').html_safe %> </p>
       </div>
@@ -12,7 +14,7 @@
 
     <div class="col-md-7">
       <div class="posts_on_profile">
-        <h2> Thoughts of the week </h2> 
+        <h2> Thoughts of the week by <%= @user.name %> </h2> 
         <% @user.posts.each do |post| %>
           <%= link_to post.title, post_path(post), style: "color: black;" %> 
         <% end %>

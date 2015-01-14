@@ -38,6 +38,7 @@ class ProfilesController < ApplicationController
     @profile = @user.profile
     @profile.update(profile_params)
     respond_with(@user,@profile)
+    flash[:notice] = "Your profile has been edited."
   end
 
   def destroy
