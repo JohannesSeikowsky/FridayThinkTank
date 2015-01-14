@@ -139,9 +139,18 @@ h1#title_question{
   h2{
     color: black;
     background-color: #4499FF; 
+    margin-bottom: 30px;
   }
-  a:hover{
-    color: yellow;
+  @media (max-width: 450px){
+    h2{
+      font-size: 20px;
+    }  
+  }
+  h3{
+    font-size: 23px;
+    a:hover{
+      background-color: #4499FF;
+    }
   }
   p{
     margin-top: 0px;
