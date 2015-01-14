@@ -90,6 +90,19 @@ h1#title_question{
   }
 }
 
+@media (max-width: 768px){
+  .image_on_post{
+    display: none;
+  }
+  .post_show{
+    padding: 12px 5px 20px 5px;
+    p{
+      font-size: 12px;
+    }
+  }
+}
+
+
 /* PROFILE SHOW */
 
 .profile_on_profile{
