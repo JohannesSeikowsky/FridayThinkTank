@@ -5,7 +5,7 @@
   <%= form_for(@profile, url: user_profile_path, method: :patch) do |f| %>
     <% if @profile.errors.any? %>
       <% @profile.errors.full_messages.each do |message| %>
-        <h2><%= message %></h2>
+        <h3 id="twitter_blue"><%= message %></h3>
       <% end %>
     <% end %>
 
