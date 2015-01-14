@@ -22,7 +22,7 @@ h1#title_question{
   font-size: 47px;
   margin-bottom: 30px;
   @media (max-width: 890px){
-    font-size: 40px;   
+    font-size: 32px;   
   }
 }
 
@@ -177,10 +177,19 @@ h1#title_question{
   background-color: black;
   @media (max-width: 1200px){
     width: 30%;
-    background-color: yellow;
   }
   p{
     margin: 4px 0px 0px 1px;
+  }
+  @media (max-width: 768px){
+    h4{
+      font-size: 20px; 
+    }
+    p{
+      display: none; 
+    }
+    width: 100%;
+    background-color: #4499FF;
   }
 }
 
