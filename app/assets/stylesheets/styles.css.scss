@@ -22,7 +22,7 @@ h1#title_question{
   font-size: 47px;
   margin-bottom: 30px;
   @media (max-width: 890px){
-    font-size: 33px;   
+    font-size: 30px;   
   }
 }
 
@@ -141,10 +141,13 @@ h1#title_question{
     background-color: #4499FF; 
     margin-bottom: 30px;
   }
-  @media (max-width: 450px){
+  @media (max-width: 550px){
     h2{
       font-size: 20px;
     }  
+    h3{
+      font-size: 20px;    
+    }
   }
   h3{
     font-size: 23px;
