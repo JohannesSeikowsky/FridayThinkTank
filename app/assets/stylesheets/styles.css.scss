@@ -22,7 +22,7 @@ h1#title_question{
   font-size: 47px;
   margin-bottom: 30px;
   @media (max-width: 890px){
-    font-size: 32px;   
+    font-size: 26px;   
   }
 }
 
@@ -186,12 +186,19 @@ h1#title_question{
       font-size: 20px; 
     }
     p{
-      display: none; 
+      display: none;
     }
     width: 100%;
     background-color: #4499FF;
   }
 }
+
+.homepage_right_sidebar{
+  h2{
+
+  }
+}
+
 
 .item:hover{
   background-color: #404040;
