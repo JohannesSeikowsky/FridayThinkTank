@@ -1,20 +1,22 @@
 <% provide(:title, "Thought of the week - Post") %> 
 
-<div class="col-sm-3 col-md-3 image_on_post">
-  <% unless @user.profile.nil? %> 
-    <div class="profile_on_post">
-      <a href="<%= user_profile_path(@user) %>"> 
-        <%= image_tag(@profile.image) %>
-        <h3 id="twitter_blue"> <%= @user.name %> </h3> 
-      </a>
-    </div>
-  <% else %>
-  <% end %>
-</div> 
+<div class="row">
+  <div class="col-sm-3 col-md-3 image_on_post">
+    <% unless @user.profile.nil? %> 
+      <div class="profile_on_post">
+        <a href="<%= user_profile_path(@user) %>"> 
+          <%= image_tag(@profile.image) %>
+          <h3 id="twitter_blue"> <%= @user.name %> </h3> 
+        </a>
+      </div>
+    <% else %>
+    <% end %>
+  </div> 
 
-<div class="col-xs-12 col-sm-9 col-md-6 post_show">
-  <h3> <%= @post.title %> </h3>
-  <p> <%= h(@post.content).gsub(/\n/, '<br/>').html_safe %> </p>
+  <div class="col-xs-12 col-sm-9 col-md-6 post_show">
+    <h3> <%= @post.title %> </h3>
+    <p> <%= h(@post.content).gsub(/\n/, '<br/>').html_safe %> </p>
+  </div>
 </div>
 
 <div class="row">
