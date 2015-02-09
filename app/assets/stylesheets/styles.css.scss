@@ -193,20 +193,19 @@ h1#main_header{
   }
 }
 
-@media (max-width: 768px){
-  .homepage_right_sidebar{
-    margin-top: 50px;
-    background-color: #BF0000;
-    opacity: 0.6;
-    h1{
-      font-size: 24px;
-    }
-  }
-}
-
 .item:hover{
   background-color: #404040;
 }
+
+.homepage_right_sidebar{
+  margin-top: 65px;
+  background-color: #BF0000;
+  h1{
+    font-size: 23px;
+  }
+}
+
+
 
 
 
