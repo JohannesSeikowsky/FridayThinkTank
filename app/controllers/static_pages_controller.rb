@@ -2,7 +2,7 @@ class StaticPagesController < ApplicationController
   layout 'homepage_layout', only: [:home]
 
   def home
-    @all_posts = Post.order("RANDOM()")
+    @all_posts = Post.order("created_at desc")
     @users = User.all
     @total_number_of_posts = Post.all.count
     @newest_posts = Post.order('created_at DESC').limit(3)
