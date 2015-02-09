@@ -21,9 +21,7 @@ body{
 
 /* Slogan */
 h1#main_header{
-  color: #FF4E4E;
   font-size: 37px;
-  margin-top: 90px;
   margin-bottom: 30px;
   @media (max-width: 890px){
     font-size: 30px;   
@@ -168,17 +166,16 @@ h1#main_header{
 /* Pin Wall - JQuery Masonry CSS */
 .item{
   h4{
-    background-color: #4499FF;
     margin: 0 0 6px 0;
   }
   padding: 7px;
-  font-size: 0px 12px 12px 12px;
   float: left;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   box-shadow: 1px 1px 10px #444;
-  width: 48%;
+  width: 76%;
+  background-color: #4499FF;
   @media (max-width: 1200px){
     width: 30%;
   }
