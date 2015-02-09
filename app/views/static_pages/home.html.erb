@@ -9,18 +9,24 @@
      <a href="<%= post_path(post) %>"> 
         <div class="item">  
           <h4 style="display: inline;"> <%= post.title %> </h4> 
-          <p style="display: inline; color: #696969;"> by <%= post.user.name %> </p> 
+          <p style="display: inline; color: #5F5F5F;"> <%= post.user.name %> </p> 
         </div> 
      </a>
     <% end %> 
   </div> 
 </div>
 
-<div class="col-xs-5 col-sm-4 homepage_right_sidebar">
-  <h1 id="twitter_blue"> * The people writing this stuff: </h1>
-  <% @users.each do |user| %>
-    <h1> <%= link_to user.name, user_profile_path(user) %> </h1> 
-  <% end %>
+<div class="col-xs-5 col-sm-4">
+  <div class="homepage_right_sidebar">
+    <h1 id="twitter_blue"> * The people writing this stuff: </h1>
+    <% @users.each do |user| %>
+      <h1> <%= link_to user.name, user_profile_path(user) %> </h1> 
+    <% end %>
+  </div> 
+  <div class="below_homepage_right_sidebar">  
+      <h4 id="twitter_blue"> "NAME" is a collective blog by the people listed above. Each post is an answer to the simple, yet interesting question: "What was your most interesting thought this week." We hope you enjoy reading as much as we enjoy writing. </h4>
+     <h3 style="text-align: center;"> <%= link_to "Write a guest post", "#" %> </h3>
+  </div>
 </div> 
 
 <!-- Initializing JQeury Masonry -->
