@@ -170,15 +170,13 @@ h1#main_header{
   }
   padding: 7px;
   float: left;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   box-shadow: 1px 1px 10px #444;
-  width: 76%;
+  width: 86%;
   background-color: #4499FF;
-  @media (max-width: 1200px){
-    width: 30%;
-  }
+  margin-bottom: 7px;
   p{
     margin: 4px 0px 0px 1px;
   }
