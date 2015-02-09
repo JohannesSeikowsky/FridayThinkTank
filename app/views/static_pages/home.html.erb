@@ -9,7 +9,7 @@
      <a href="<%= post_path(post) %>"> 
         <div class="item">  
           <h4 style="display: inline;"> <%= post.title %> </h4> 
-          <p style="display: inline; color: #9D9D9D;"> by <%= post.user.name %> </p> 
+          <p style="display: inline; color: #404040;"> by <%= post.user.name %> </p> 
         </div> 
      </a>
     <% end %> 
@@ -17,9 +17,9 @@
 </div>
 
 <div class="col-xs-5 col-sm-4 homepage_right_sidebar">
-  <h2 id="twitter_blue"> PEOPLE </h2>
+  <h1 id="twitter_blue"> PEOPLE </h1>
   <% @users.each do |user| %>
-    <p> <%= link_to user.name, user_profile_path(user) %> </p> 
+    <h1> <%= link_to user.name, user_profile_path(user) %> </h1> 
   <% end %>
 </div> 
 

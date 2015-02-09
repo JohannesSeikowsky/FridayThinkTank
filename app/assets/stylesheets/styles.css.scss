@@ -22,7 +22,8 @@ body{
 /* Slogan */
 h1#main_header{
   font-size: 37px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   @media (max-width: 890px){
     font-size: 30px;   
   }
@@ -194,8 +195,11 @@ h1#main_header{
 
 @media (max-width: 768px){
   .homepage_right_sidebar{
-    h2{
-      font-size: 23px;
+    margin-top: 50px;
+    background-color: #BF0000;
+    opacity: 0.6;
+    h1{
+      font-size: 24px;
     }
   }
 }
