@@ -17,7 +17,7 @@
 </div>
 
 <div class="col-xs-5 col-sm-4 homepage_right_sidebar">
-  <h1 id="twitter_blue"> PEOPLE </h1>
+  <h1 id="twitter_blue"> * The people writing this stuff: </h1>
   <% @users.each do |user| %>
     <h1> <%= link_to user.name, user_profile_path(user) %> </h1> 
   <% end %>
