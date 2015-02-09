@@ -20,9 +20,10 @@ body{
 }
 
 /* Slogan */
-h1#title_question{
+h1#main_header{
   color: #FF4E4E;
-  font-size: 47px;
+  font-size: 37px;
+  margin-top: 90px;
   margin-bottom: 30px;
   @media (max-width: 890px){
     font-size: 30px;   
@@ -170,17 +171,14 @@ h1#title_question{
     background-color: #4499FF;
     margin: 0 0 6px 0;
   }
-  margin: 4px;
   padding: 7px;
   font-size: 0px 12px 12px 12px;
-  line-height: 1.4em;
   float: left;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   box-shadow: 1px 1px 10px #444;
   width: 48%;
-  background-color: black;
   @media (max-width: 1200px){
     width: 30%;
   }

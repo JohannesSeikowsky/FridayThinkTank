@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+  layout 'homepage_layout', only: [:home]
+
   def home
     @all_posts = Post.order("RANDOM()")
     @users = User.all

@@ -1,14 +1,13 @@
 <% provide(:title, "Thought of the week - Homepage") %> 
 
 <div class="col-xs-7 col-sm-10">
-  <h1 id="title_question">What was your most interesting thought this week? </h1>
+  <h1 id="main_header"> <%= @total_number_of_posts %> THOUGHTS </h1>
 
   <div id="container">
     <% @all_posts.each do |post| %>
      <a href="<%= post_path(post) %>"> 
         <div class="item">  
           <h4> <%= post.title %> </h4> 
-          <p> <%= truncate(post.content, length: rand(70..105)) %> </p>
           <p style="color: #9D9D9D;"> by <%= post.user.name %> </p> 
         </div> 
      </a>
@@ -26,7 +25,7 @@
     <p> <%= link_to user.name, user_profile_path(user) %> </p> 
   <% end %>
   <h2 id="twitter_blue"> Thoughts: </h2>
-  <h3 id="" style="font-size: 66px; color: yellow;"> <%= @total_number_of_posts %> </h3>
+  <h3 id="" style="font-size: 66px; color: yellow;">  </h3>
 </div> 
 
 <!-- Initializing JQeury Masonry -->
