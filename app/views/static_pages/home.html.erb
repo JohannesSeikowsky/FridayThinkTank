@@ -1,5 +1,7 @@
 <% provide(:title, "Thought of the week - Homepage") %> 
 
+<%= render "layouts/small_header" %>
+
 <div class="col-xs-7 col-sm-8">
   <h1 id="main_header"> <%= @total_number_of_posts %> THOUGHTS AND ESSAYS </h1>
   <!-- <p> we write for enjoyment - primarily our enjoyment. hopefully for yours too. </p> -->
@@ -23,7 +25,7 @@
       <h1> <%= link_to user.name, user_profile_path(user) %> </h1> 
     <% end %>
     <br>
-      <h5 style="color: #F2F200; font-size: 16px; line-height: 1.15;"> "NAME" is a collective blog by the people listed above. Each post is an answer to the simple, yet interesting question: "What was your most interesting thought this week." We hope you enjoy reading as much as we enjoy writing. </h5>
+      <h5 style="color: #F2F200; font-size: 16px; line-height: 1.15;"> "NAME" is a collective blog by the people listed above. Each post is an answer to the simple, yet interesting question: "What was your most interesting thought this week?" We hope you enjoy reading as much as we enjoy writing. </h5>
       <br>
   </div>
 </div> 

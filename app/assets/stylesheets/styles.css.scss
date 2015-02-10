@@ -1,5 +1,5 @@
 body{
-  background: asset-url("ny.jpg") no-repeat center center fixed;
+  background-color: orange;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -25,7 +25,6 @@ h1#main_header{
   margin-top: 35px;
   margin-bottom: 10px;
   color: #A10000;
-  opacity: 0.7;
   @media (max-width: 890px){
     font-size: 30px;   
   }
@@ -200,10 +199,10 @@ h1#main_header{
 }
 
 .homepage_right_sidebar{
-  margin-top: 83px;
+  margin-top: 63px;
   padding: 5px 35px 30px 35px;
   background-color: #A10000;
-  opacity: 0.7;
+  opacity: 0.8;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -212,21 +211,14 @@ h1#main_header{
   }
 }
 
-.below_homepage_right_sidebar{
-  margin-top: 16px;
-  padding: 5px 35px 30px 35px;
-  background-color: #A10000;
-  opacity: 0.7;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  h1{
-    font-size: 24px;
+.small_header{
+  a{
+    float: right;
+    margin-top: 10px; 
+    margin-right: 15px; 
+    color: #A10000;
   }
 }
-
-
-
 
 
 
