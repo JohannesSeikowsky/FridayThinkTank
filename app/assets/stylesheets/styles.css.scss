@@ -1,5 +1,5 @@
 body{
-  background-color: orange;
+  background: asset-url("ny.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -175,6 +175,7 @@ h1#main_header{
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  box-shadow: 1px 1px 10px #444;
   width: 100%;
   background-color: #4499FF;
   margin-bottom: 7px;
