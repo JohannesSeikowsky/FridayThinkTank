@@ -1,45 +1,17 @@
-<nav class="navbar navbar-default" style="background-color: black;">
-  <div class="container-fluid" style="color: #4099FF;">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="<%= root_path %>" id="header_link">FridayThinkTank</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <% if user_signed_in? %>
-          <% unless current_user.profile.nil? %> 
-            <li> <%= link_to "Your Profile", user_profile_path(current_user), id: "header_link" %> </li>          
-            <li> <%= link_to "Edit Profile", edit_user_profile_path(current_user), id: "header_link" %> </li>                    
-          <% else %> 
-            <li>  <%= link_to "CREATE YOUR PROFILE", new_user_profile_path(current_user), id: "header_link_highlight" %> </li>
-          <% end %> 
-          <li>  <%= link_to "Your Posts", user_posts_path(current_user), id: "header_link"  %> </li> 
-          <li>  <%= link_to "New Post", new_user_post_path(current_user), id: "header_link"  %> </li> 
-          <li>  <%= link_to "Log Out", destroy_user_session_path, method: :delete, id: "header_link"  %> </li> 
-        <% else %>
-          <li> <%= link_to "About", about_path, id: "header_link" %> </li>
-          <li><a href="mailto:seikowsky@googlemail.com?&subject=Become%20a%20contributor&body=Who%20are%20you%20and%20what%20do%20you%20do?%20 Briefly." id="header_link">Contribute</a></li>
-          <li><a href="<%= new_user_session_path %>" id="header_link">Login</a></li>
-        <% end %> 
-          <!-- <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li> -->
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+<div class="my_header">
+  <ul>
+    <% if user_signed_in? %>
+      <% unless current_user.profile.nil? %> 
+        <li> <%= link_to "Manage Profile", edit_user_profile_path(current_user), id: "" %> </li>                    
+      <% else %> 
+        <li>  <%= link_to "CREATE PROFILE", new_user_profile_path(current_user), id: "" %> </li>
+      <% end %> 
+      <li>  <%= link_to "Manage Posts", user_posts_path(current_user), id: ""  %> </li> 
+      <li>  <%= link_to "Write Post", new_user_post_path(current_user), id: ""  %> </li> 
+      <li> <%= link_to "Log Out", destroy_user_session_path, method: :delete, id: "" %> </li> 
+    <% else %>
+      <li> <%= link_to "Home", root_path %> </li>
+      <li> <%= link_to "Login", new_user_session_path %> </li>
+    <% end %>
+  </ul> 
+</div> 

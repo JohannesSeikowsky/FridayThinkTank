@@ -19,14 +19,37 @@ body{
   }
 }
 
+.my_header{
+  ul{
+    list-style-type: none;
+    float: right;
+    padding: 10px 10px;
+    margin-bottom: 0px;
+  }
+  li{ 
+      display: inline;
+      padding: 0px 7px;
+      color: #A10000;
+      border-radius: 1px; 
+      -webkit-border-radius: 1px; 
+      -moz-border-radius: 1px; 
+    a{
+      background-color: #A10000;
+      padding: 5px 10px;
+      opacity: 0.8;
+    }
+  }
+}
+
+
 /* Slogan */
 h1#main_header{
   font-size: 37px;
-  margin-top: 35px;
+  margin-top: 0px;
   margin-bottom: 10px;
   color: #A10000;
   @media (max-width: 890px){
-    font-size: 22px;   
+    font-size: 27px;   
   }
 }
 

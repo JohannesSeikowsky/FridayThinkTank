@@ -1,6 +1,4 @@
 class StaticPagesController < ApplicationController
-  layout 'homepage_layout', only: [:home]
-
   def home
     @all_posts = Post.order("created_at desc")
     @users = User.all
