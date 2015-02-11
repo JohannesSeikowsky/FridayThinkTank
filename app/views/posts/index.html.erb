@@ -1,12 +1,10 @@
 <% provide(:title, "Your Posts") %> 
 
 <div class="col-xs-12 col-sm-8 col-sm-offset-2 your_posts">
+  <br>
+  <br>
   <h1 id="twitter_blue"> All Your Posts </h1> 
   <br>
-  <br>
-  <br> 
-  <br>
-
   <ol> 
     <% @posts.each do |post| %>
         <li id="twitter_blue"> <a href="<%= user_post_path(@user,post) %>" id="twitter_blue"> <%= post.title %> </a> - 
