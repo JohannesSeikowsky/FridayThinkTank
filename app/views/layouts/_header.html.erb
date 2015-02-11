@@ -1,6 +1,6 @@
 <div class="my_header">
-  <ul>
     <% if user_signed_in? %>
+    <ul>
       <li> <%= link_to "Home", root_path %> </li>
       <% unless current_user.profile.nil? %> 
         <li> <%= link_to "Manage Profile", edit_user_profile_path(current_user), id: "" %> </li>                    
@@ -10,9 +10,11 @@
       <li>  <%= link_to "Manage Posts", user_posts_path(current_user), id: ""  %> </li> 
       <li>  <%= link_to "Write Post", new_user_post_path(current_user), id: ""  %> </li> 
       <li> <%= link_to "Log Out", destroy_user_session_path, method: :delete, id: "" %> </li> 
-    <% else %>
-      <li> <%= link_to "Home", root_path %> </li>
-      <li> <%= link_to "Login", new_user_session_path %> </li>
-    <% end %>
-  </ul> 
+    </ul> 
+      <% else %>
+      <ul>
+          <li> <%= link_to "Home", root_path %> </li>
+          <li> <%= link_to "Login", new_user_session_path %> </li>
+      </ul> 
+      <% end %>
 </div> 
