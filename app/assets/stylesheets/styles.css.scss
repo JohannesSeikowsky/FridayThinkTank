@@ -33,13 +33,13 @@ body{
       display: inline;
       padding: 0px 7px;
       color: #A10000;
-      border-radius: 1px; 
-      -webkit-border-radius: 1px; 
-      -moz-border-radius: 1px; 
     a{
       background-color: #A10000;
       padding: 5px 10px;
       opacity: 0.8;
+      -webkit-border-radius: 1px;
+      -moz-border-radius: 1px;
+      border-radius: 1px;
     }
   }
 }
