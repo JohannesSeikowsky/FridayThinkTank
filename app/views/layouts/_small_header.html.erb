@@ -1,7 +1,7 @@
 <div class="small_header">
   <% if user_signed_in? %>
-    <%= link_to "Log Out", destroy_user_session_path, method: :delete, id: "header_link"  %> 
+    <%= link_to "Log Out", destroy_user_session_path, method: :delete, id: "header_link", style: "color: #A10000; text-decoration: underline;"  %> 
   <% else %>
-    <%= link_to "Login", new_user_session_path %>
+    <%= link_to "Login", new_user_session_path, style: "color: #A10000; text-decoration: underline;" %>
   <% end %>
 </div> 

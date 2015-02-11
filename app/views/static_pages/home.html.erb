@@ -2,7 +2,7 @@
 
 <%= render "layouts/small_header" %>
 
-<div class="col-xs-7 col-sm-8">
+<div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-0">
   <h1 id="main_header"> <%= @total_number_of_posts %> THOUGHTS AND ESSAYS </h1>
   <!-- <p> we write for enjoyment - primarily our enjoyment. hopefully for yours too. </p> -->
 
@@ -18,7 +18,7 @@
   </div> 
 </div>
 
-<div class="col-xs-5 col-sm-4">
+<div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
   <div class="homepage_right_sidebar">
     <h1 id="twitter_blue"> The people writing this stuff: </h1>
     <% @users.each do |user| %>
