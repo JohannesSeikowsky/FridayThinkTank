@@ -6,7 +6,7 @@
       <div class="profile_on_post">
         <a href="<%= user_profile_path(@user) %>"> 
           <%= image_tag(@profile.image) %>
-          <h3 id="twitter_blue"> <%= @user.name %> <br> See Profile </h3> 
+          <h3 id="twitter_blue" style="line-height: 1.25;"> <%= @user.name %> <br> See Profile </h3> 
         </a>
       </div>
     <% else %>
@@ -18,7 +18,9 @@
     <p> <%= h(@post.content).gsub(/\n/, '<br/>').html_safe %> </p>
   </div>
 
-  <div class="col-md-3">
+  <div class="col-md-3 post_show_sidebar">
+    <h3 style="background-color:"> <%= link_to "Write a comment", "#" %> </h3>
+
     <h3 id="twitter_blue"> Similar Posts </h3>    
     <% @posts.each do |post| %>
       <p> <%= link_to post.title, post_path(post) %> </p>

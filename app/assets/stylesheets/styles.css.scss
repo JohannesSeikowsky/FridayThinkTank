@@ -99,7 +99,7 @@ h1#main_header{
 /* POST SHOW */
 
 .post_show_row{
-  margin-top: 45px;  
+  margin-top: 36px;  
 }
 
 .profile_on_post{
@@ -127,6 +127,9 @@ h1#main_header{
     line-height: 1.45;  
     font-family: Courier;
   }
+  h3{
+    margin-top: 0px;
+  }
   h3, a{
     background-color: #4499FF;
   }
@@ -144,6 +147,9 @@ h1#main_header{
   }
 }
 
+.post_show_sidebar{
+
+}
 
 
 

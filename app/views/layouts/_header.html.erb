@@ -2,11 +2,6 @@
     <% if user_signed_in? %>
     <ul>
       <div class="inside_ul">
-                <!-- flash messages -->
-        <% flash.each do |name, msg| %> 
-          <li style="margin-right: 25px; font-weight: bold; color: #4499FF;"> <%= msg %> </li> 
-        <% end %> 
-
         <li> <%= link_to "Home", root_path %> </li>
         <% unless current_user.profile.nil? %> 
           <li> <%= link_to "Manage Profile", edit_user_profile_path(current_user) %> </li>                    
