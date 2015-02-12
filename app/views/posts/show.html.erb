@@ -19,12 +19,10 @@
   </div>
 
   <div class="col-md-3 post_show_sidebar">
-    <h3 style="background-color:"> <%= link_to "Write a comment", "#" %> </h3>
-
-    <h3 id="twitter_blue"> Similar Posts </h3>    
-    <% @posts.each do |post| %>
-      <p> <%= link_to post.title, post_path(post) %> </p>
-    <% end %>
+    <h3 style="color: black; margin-top: 0px; margin-bottom: 0px;"> Latest Posts </h3>    
+      <% @posts.each do |post| %>
+        <p style="margin: 3px 0px; opacity: 0.8; color: black;"> <%= link_to post.title, post_path(post) %> </p>
+      <% end %>
   </div>
 </div>
 

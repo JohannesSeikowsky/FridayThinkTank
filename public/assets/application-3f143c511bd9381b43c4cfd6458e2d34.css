@@ -1,0 +1,390 @@
+/* line 1, /Users/Johannes/code/teamblog/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/Johannes/code/teamblog/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/Johannes/code/teamblog/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/Johannes/code/teamblog/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 23, /Users/Johannes/code/teamblog/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /Users/Johannes/code/teamblog/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /Users/Johannes/code/teamblog/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /Users/Johannes/code/teamblog/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /Users/Johannes/code/teamblog/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /Users/Johannes/code/teamblog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /Users/Johannes/code/teamblog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /Users/Johannes/code/teamblog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 1, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+body {
+  background: url(/assets/ny-9649ad04a1660478aafc383f29d96b6b.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Courier;
+  padding-bottom: 90px;
+}
+/* line 9, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+body .container-fluid {
+  font-family: Courier;
+  /* Arial and Helvetica are alternatives here */
+  color: white;
+}
+/* line 13, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+body .container-fluid a {
+  color: white;
+}
+/* line 16, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+body .container-fluid p {
+  overflow: hidden;
+}
+
+/* line 23, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.header ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 10px 10px;
+  margin-bottom: 0px;
+}
+/* line 29, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.header .inside_ul {
+  float: right;
+}
+/* line 32, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.header li {
+  display: inline;
+  padding: 0px 7px;
+  color: #A10000;
+}
+/* line 36, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.header li a {
+  background-color: #A10000;
+  padding: 5px 10px;
+  opacity: 0.8;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+/* Slogan */
+/* line 49, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+h1#main_header {
+  font-size: 37px;
+  margin-top: 27px;
+  margin-bottom: 10px;
+  color: #A10000;
+}
+@media (max-width: 890px) {
+  /* line 49, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+  h1#main_header {
+    font-size: 27px;
+  }
+}
+
+/* Color */
+/* line 60, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+#twitter_blue {
+  color: #4499FF;
+}
+
+/* Post Index */
+/* line 67, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.your_posts ol li {
+  font-size: 22px;
+  line-height: 1.25;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  /* line 73, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+  .your_posts ol li {
+    font-size: 14px;
+  }
+}
+
+/* Header Links Hover */
+/* line 81, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+#header_link:hover {
+  color: white;
+}
+
+/* line 85, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+#header_link_highlight {
+  color: red;
+}
+
+/* line 89, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.sign_up_area {
+  width: 300px;
+}
+/* line 91, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.sign_up_area input {
+  margin-bottom: 10px;
+}
+
+/* POST SHOW */
+/* line 101, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.post_show_row {
+  margin-top: 36px;
+}
+
+/* line 106, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.profile_on_post img {
+  width: 100%;
+  height: auto;
+  border: 8px solid white;
+  border-radius: 4px;
+}
+/* line 112, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.profile_on_post a:hover {
+  background-color: white;
+}
+
+/* line 117, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.post_show {
+  background-color: white;
+  padding: 25px 50px 34px 45px;
+  color: black;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin-bottom: 25px;
+}
+/* line 125, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.post_show p {
+  font-size: 14px;
+  line-height: 1.38;
+  font-family: Courier;
+}
+/* line 130, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.post_show h3 {
+  margin-top: 0px;
+}
+/* line 133, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.post_show h3, .post_show a {
+  background-color: #4499FF;
+}
+
+@media (max-width: 768px) {
+  /* line 139, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+  .image_on_post {
+    display: none;
+  }
+
+  /* line 142, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+  .post_show {
+    padding: 3px 14px 20px 14px;
+  }
+  /* line 144, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+  .post_show p {
+    font-size: 13px;
+  }
+}
+/* PROFILE SHOW */
+/* line 161, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.profile_on_profile img {
+  width: 100%;
+  height: auto;
+  border: 8px solid white;
+  border-radius: 4px;
+}
+/* line 167, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.profile_on_profile a:hover {
+  background-color: white;
+}
+/* line 170, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.profile_on_profile p {
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-family: Courier;
+}
+
+/* line 180, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.posts_on_profile {
+  background-color: white;
+  padding: 10px 40px 44px 40px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+/* line 186, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.posts_on_profile h2 {
+  color: black;
+  background-color: #4499FF;
+  margin-bottom: 30px;
+}
+@media (max-width: 550px) {
+  /* line 192, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+  .posts_on_profile h2 {
+    font-size: 20px;
+  }
+  /* line 195, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+  .posts_on_profile h3 {
+    font-size: 18px;
+  }
+}
+/* line 199, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.posts_on_profile h3 {
+  font-size: 23px;
+}
+/* line 201, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.posts_on_profile h3 a:hover {
+  background-color: #4499FF;
+}
+/* line 205, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.posts_on_profile p {
+  margin-top: 0px;
+}
+
+/* Pin Wall - JQuery Masonry CSS */
+/* line 212, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.item {
+  padding: 7px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px #444;
+  width: 100%;
+  background-color: #4499FF;
+  margin-bottom: 7px;
+}
+/* line 213, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.item h4 {
+  margin: 0 0 6px 0;
+}
+/* line 225, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.item p {
+  margin: 4px 0px 0px 1px;
+}
+@media (max-width: 768px) {
+  /* line 212, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+  .item {
+    width: 100%;
+    background-color: #4499FF;
+  }
+  /* line 229, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+  .item h4 {
+    font-size: 16px;
+  }
+  /* line 232, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+  .item p {
+    display: none;
+  }
+}
+
+/* line 240, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.item:hover {
+  background-color: #404040;
+}
+
+/* line 244, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.homepage_right_sidebar {
+  margin-top: 69px;
+  padding: 5px 35px 30px 35px;
+  background-color: #A10000;
+  opacity: 0.8;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 252, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.homepage_right_sidebar h1 {
+  font-size: 24px;
+}
+@media (max-width: 992px) {
+  /* line 244, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+  .homepage_right_sidebar {
+    margin-top: 22px;
+  }
+}
+
+/* line 261, /Users/Johannes/code/teamblog/app/assets/stylesheets/styles.css.scss */
+.small_header a {
+  float: right;
+  margin-top: 10px;
+  margin-right: 15px;
+  color: #A10000;
+  font-size: 18px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

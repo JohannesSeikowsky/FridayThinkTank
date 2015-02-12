@@ -20,7 +20,7 @@ class PostsController < ApplicationController
     @user = @post.user
     @profile = @user.profile
     @new_comment = @post.comments.build
-    @posts = Post.last(3)
+    @posts = Post.last(4)
   end
 
   # GET /posts/new
