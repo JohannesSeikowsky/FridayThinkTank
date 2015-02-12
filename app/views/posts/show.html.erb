@@ -20,9 +20,9 @@
 
   <div class="col-md-3">
     <h3 id="twitter_blue"> Similar Posts </h3>    
-      <% @posts.each do |post| %> 
-        <p> <%= post.title %> </p>
-      <% end %>
+    <% @posts.each do |post| %>
+      <p> <%= link_to post.title, post_path(post) %> </p>
+    <% end %>
   </div>
 </div>
 
@@ -40,3 +40,4 @@
     </div>
   </div>
 </div>
+
