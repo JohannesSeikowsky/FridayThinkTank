@@ -19,7 +19,7 @@ body{
   }
 }
 
-.my_header{
+.header{
   ul{
     width: 100%;
     list-style-type: none;
@@ -94,7 +94,14 @@ h1#main_header{
 }
 
 
+
+
 /* POST SHOW */
+
+.post_show_row{
+  margin-top: 45px;  
+}
+
 .profile_on_post{
   img{
     width: 100%;
@@ -107,7 +114,7 @@ h1#main_header{
   }
 }
 
-.about_show, .post_show{
+.post_show{
   background-color: white; 
   padding: 25px 50px 34px 45px;
   color: black;
@@ -136,6 +143,10 @@ h1#main_header{
     }
   }
 }
+
+
+
+
 
 
 /* PROFILE SHOW */

@@ -1,12 +1,12 @@
 <% provide(:title, "Thought of the week - Post") %> 
 
-<div class="row">
+<div class="row post_show_row">
   <div class="col-sm-3 col-md-3 image_on_post">
     <% unless @user.profile.nil? %> 
       <div class="profile_on_post">
         <a href="<%= user_profile_path(@user) %>"> 
           <%= image_tag(@profile.image) %>
-          <h3 id="twitter_blue"> <%= @user.name %> </h3> 
+          <h3 id="twitter_blue"> <%= @user.name %> <br> See Profile </h3> 
         </a>
       </div>
     <% else %>
@@ -16,6 +16,13 @@
   <div class="col-xs-12 col-sm-9 col-md-6 post_show">
     <h3> <%= @post.title %> </h3>
     <p> <%= h(@post.content).gsub(/\n/, '<br/>').html_safe %> </p>
+  </div>
+
+  <div class="col-md-3">
+    <h3 id="twitter_blue"> Similar Posts </h3>    
+      <% @posts.each do |post| %> 
+        <p> <%= post.title %> </p>
+      <% end %>
   </div>
 </div>
 
