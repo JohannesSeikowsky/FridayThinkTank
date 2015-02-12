@@ -6,7 +6,7 @@
       <div class="profile_on_post">
         <a href="<%= user_profile_path(@user) %>"> 
           <%= image_tag(@profile.image) %>
-          <h3 id="twitter_blue" style="line-height: 1.25;"> <%= @user.name %> <br> See Profile </h3> 
+          <h3 style="line-height: 1.25; color: black;"> <%= @user.name %> <br> See Profile </h3> 
         </a>
       </div>
     <% else %>
@@ -19,9 +19,9 @@
   </div>
 
   <div class="col-md-3 post_show_sidebar">
-    <h3 style="color: black; margin-top: 0px; margin-bottom: 0px;"> Latest Posts </h3>    
+    <h3 style="color: black; margin-top: 8px; margin-bottom: 0px; text-decoration: underlined;"> Latest Posts </h3>    
       <% @posts.each do |post| %>
-        <p style="margin: 3px 0px; opacity: 0.8; color: black;"> <%= link_to post.title, post_path(post) %> </p>
+        <h4 style="margin: 3px 0px; opacity: 0.8;"> <%= link_to post.title, post_path(post) %> </h4>
       <% end %>
   </div>
 </div>

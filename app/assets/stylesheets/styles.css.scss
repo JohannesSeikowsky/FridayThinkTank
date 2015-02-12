@@ -116,7 +116,7 @@ h1#main_header{
 
 .post_show{
   background-color: white; 
-  padding: 25px 50px 34px 45px;
+  padding: 8px 50px 34px 45px;
   color: black;
   border-radius: 4px; 
   -webkit-border-radius: 4px; 
@@ -131,7 +131,6 @@ h1#main_header{
     margin-top: 0px;
   }
   h3, a{
-    background-color: #4499FF;
   }
 }
 
@@ -148,7 +147,11 @@ h1#main_header{
 }
 
 .post_show_sidebar{
-
+  h4{
+    a{
+      color: black;
+    }
+  }
 }
 
 
