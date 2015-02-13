@@ -22,8 +22,8 @@ body{
 .header{
   ul{
     position: fixed; 
-    top: 4px;
-    right: 4px;
+    top: 10px;
+    right: 10px;
     width: 100%;
     list-style-type: none;
     margin-bottom: 0px;
@@ -50,7 +50,7 @@ body{
 /* Slogan */
 h1#main_header{
   font-size: 37px;
-  margin-top: 27px;
+  margin-top: 41px;
   margin-bottom: 10px;
   color: #A10000;
   @media (max-width: 890px){
@@ -255,7 +255,7 @@ h1#main_header{
 }
 
 .homepage_right_sidebar{
-  margin-top: 69px;
+  margin-top: 89px;
   padding: 5px 35px 30px 35px;
   background-color: #A10000;
   opacity: 0.8;
