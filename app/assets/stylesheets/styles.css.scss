@@ -21,9 +21,11 @@ body{
 
 .header{
   ul{
+    position: fixed; 
+    top: 4px;
+    right: 4px;
     width: 100%;
     list-style-type: none;
-    padding: 10px 10px;
     margin-bottom: 0px;
   }
   .inside_ul{
@@ -31,7 +33,7 @@ body{
   }
   li{ 
       display: inline;
-      padding: 0px 7px;
+      padding: 0px 5px;
       color: #A10000;
     a{
       background-color: #A10000;
@@ -134,7 +136,7 @@ h1#main_header{
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
   .image_on_post{
     display: none;
   }
