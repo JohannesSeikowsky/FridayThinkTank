@@ -49,8 +49,8 @@ body{
 
 /* Slogan */
 h1#main_header{
+  margin-top: 45px;
   font-size: 37px;
-  margin-top: 41px;
   margin-bottom: 10px;
   color: #A10000;
   @media (max-width: 890px){
@@ -101,7 +101,7 @@ h1#main_header{
 /* POST SHOW */
 
 .post_show_row{
-  margin-top: 57px;  
+  margin-top: 45px;
 }
 
 .profile_on_post{
@@ -171,6 +171,7 @@ h1#main_header{
 /* PROFILE SHOW */
 
 .profile_on_profile{
+  margin-top: 45px;
   img{
     width: 100%;
     height: auto;
@@ -191,6 +192,7 @@ h1#main_header{
 }
 
 .posts_on_profile{
+  margin-top: 45px; 
   background-color: white;
   padding: 10px 40px 44px 40px;
   border-radius: 4px;
