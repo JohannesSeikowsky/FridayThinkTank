@@ -1,23 +1,22 @@
 <% provide(:title, "Thought of the week - Homepage") %> 
 
+<!-- Main Body Homepage -->
 <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-0">
-  <h1 id="homepage_header"> <%= @total_number_of_posts %> THOUGHTS AND ESSAYS </h1>
-  <!-- <p> we write for enjoyment - primarily our enjoyment. hopefully for yours too. </p> -->
-
-  <div id="container">
-    <% @all_posts.each do |post| %>
+  <h1 id="headline"> <%= @total_number_of_posts %> THOUGHTS AND ESSAYS </h1>
+  <!-- Loop through Posts -->
+  <% @all_posts.each do |post| %>
      <a href="<%= post_path(post) %>"> 
-        <div class="item">  
-          <h4 style="display: inline;"> <%= post.title %> </h4> 
-          <p style="display: inline; color: #5F5F5F;"> <%= post.user.name %> </p> 
+        <div class="one_post">  
+          <h4> <%= post.title %> </h4> 
+          <p> <%= post.user.name %> </p> 
         </div> 
      </a>
-    <% end %> 
-  </div> 
+  <% end %> 
 </div>
 
+<!-- Sidebar Homepage -->
 <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
-  <div class="homepage_right_sidebar">
+  <div class="right_sidebar_on_homepage">
     <h1 id="twitter_blue"> The people writing this stuff: </h1>
     <% @users.each do |user| %>
       <h1> <%= link_to user.name, user_profile_path(user) %> </h1> 
@@ -27,12 +26,3 @@
       <br>
   </div>
 </div> 
-
-<!-- Initializing JQeury Masonry -->
-<script>
-  var container = document.querySelector('#container');
-  var msnry = new Masonry( container, {
-    // options
-    itemSelector: '.item'
-  });
-</script> 

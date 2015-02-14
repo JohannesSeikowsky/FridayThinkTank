@@ -8,7 +8,6 @@ body{
   padding-bottom: 90px;
   .container-fluid{
     font-family: Courier;
-    /* Arial and Helvetica are alternatives here */
     color: white;
     a{
       color: white;
@@ -48,7 +47,7 @@ body{
 
 
 /* Slogan */
-h1#homepage_header{
+h1#headline{
   margin-top: 45px;
   font-size: 37px;
   margin-bottom: 10px;
@@ -114,6 +113,10 @@ h1#homepage_header{
   a:hover{
     background-color: white;
   }
+  h3{
+    line-height: 1.25; 
+    color: black;
+  }
 }
 
 .post_show{
@@ -131,6 +134,7 @@ h1#homepage_header{
   }
   h3{
     margin-top: 0px;
+    font-size: 29px;
   }
   h3, a{
   }
@@ -149,8 +153,17 @@ h1#homepage_header{
 }
 
 .post_show_sidebar{
+  color: black;
+  h3{
+    margin-top: 8px; 
+    margin-bottom: 0px; 
+    text-decoration: underline;
+  }
   h4{
     a{
+      color: black;
+      margin: 5px 0px; 
+      opacity: 0.8; 
       color: black;
     }
     a:hover{
@@ -165,7 +178,9 @@ h1#homepage_header{
   }
 }
 
-
+.comment_content{
+  margin-top: 30px;
+}
 
 
 /* PROFILE SHOW */
@@ -182,6 +197,7 @@ h1#homepage_header{
     background-color: white;
   }
   p{
+    color: black;
     background-color: white;
     padding: 10px;
     border-radius: 4px;
@@ -216,6 +232,9 @@ h1#homepage_header{
     a:hover{
       background-color: #4499FF;
     }
+    a{
+      color: black;
+    }
   }
   p{
     margin-top: 0px;
@@ -224,7 +243,7 @@ h1#homepage_header{
 
 
 /* Pin Wall - JQuery Masonry CSS */
-.item{
+.one_post{
   h4{
     margin: 0 0 6px 0;
   }
@@ -239,25 +258,29 @@ h1#homepage_header{
   margin-bottom: 7px;
   p{
     margin: 4px 0px 0px 1px;
+    display: inline;
+    color: #5F5F5F;
+  }
+  h4{
+    display: inline;
   }
   @media (max-width: 768px){
     h4{
       font-size: 16px; 
     }
     p{
-      display: none;
     }
     width: 100%;
     background-color: #4499FF;
   }
 }
 
-.item:hover{
+.one_post:hover{
   background-color: #404040;
 }
 
-.homepage_right_sidebar{
-  margin-top: 94px;
+.right_sidebar_on_homepage{
+  margin-top: 96px;
   padding: 5px 35px 30px 35px;
   background-color: #A10000;
   opacity: 0.8;

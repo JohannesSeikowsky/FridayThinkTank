@@ -1,31 +1,35 @@
 <% provide(:title, "Thought of the week - Post") %> 
 
 <div class="row post_show_row">
+  <!-- left side image --> 
   <div class="col-sm-3 col-md-3 image_on_post">
     <% unless @user.profile.nil? %> 
       <div class="profile_on_post">
         <a href="<%= user_profile_path(@user) %>"> 
           <%= image_tag(@profile.image) %>
-          <h3 style="line-height: 1.25; color: black;"> <%= @user.name %> <br> See Profile </h3> 
+          <h3> <%= @user.name %> <br> See Profile </h3> 
         </a>
       </div>
     <% else %>
     <% end %>
   </div> 
 
+  <!-- the actual post --> 
   <div class="col-xs-12 col-sm-9 col-md-6 post_show">
-    <h3 style="font-size: 29px;"> <%= @post.title %> </h3>
+    <h3> <%= @post.title %> </h3>
     <p> <%= h(@post.content).gsub(/\n/, '<br/>').html_safe %> </p>
   </div>
 
+  <!-- sidebar on the right --> 
   <div class="col-md-3 post_show_sidebar">
-    <h3 style="color: black; margin-top: 8px; margin-bottom: 0px; text-decoration: underline;"> Other Posts </h3>    
-      <% @posts.each do |post| %>
-        <h4 style="margin: 5px 0px; opacity: 0.8; color: black;"> - <%= link_to post.title, post_path(post) %> </h4>
-      <% end %>
+    <h3> Other Posts </h3>    
+    <% @posts.each do |post| %>
+      <h4> - <%= link_to post.title, post_path(post) %> </h4>
+    <% end %>
   </div>
 </div>
 
+<!-- commenting section --> 
 <div class="row">
   <div class="col-xs-12 col-sm-9 col-sm-offset-3 col-md-6 col-md-offset-3 post_show">
     <p> Comments/Responses </p>
@@ -35,7 +39,7 @@
       <%= f.submit "Post", class: "btn btn-md btn-warning" %> 
     <% end %> 
       <% @post.comments.each do |comment| %> 
-        <div style="margin-top: 30px;"> <%= comment.content %> <br> <%= comment.name %> </div>
+        <div class="comment_content"> <%= comment.content %> <br> <%= comment.name %> </div>
       <% end %> 
     </div>
   </div>
