@@ -6,7 +6,7 @@
   <!-- Loop through Posts -->
   <% @all_posts.each do |post| %>
      <a href="<%= post_path(post) %>"> 
-        <div class="one_post">  
+        <div class="one_post_on_homepage">  
           <h4> <%= post.title %> </h4> 
           <p> <%= post.user.name %> </p> 
         </div> 
