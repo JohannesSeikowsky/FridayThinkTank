@@ -14,7 +14,8 @@
 
 </head>
 <body>
-
+  
+  <%= render 'layouts/header' %>
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1">
@@ -23,7 +24,6 @@
           <p style="position: fixed; top: 5px; left: 10px; font-weight: bold; color: #4499FF; font-size: 18px;"> <%= msg %> </p> 
         <% end %> 
 
-        <%= render 'layouts/header' %>
         <%= yield %>
       </div> 
     </div> 
