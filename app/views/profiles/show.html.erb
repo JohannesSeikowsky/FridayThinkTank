@@ -17,7 +17,7 @@
    <!-- posts on user profile -->
     <div class="col-xs-12 col-md-7">
       <div class="posts_on_profile">
-        <h2> "Thoughts of the week" by <%= @user.name %> </h2> 
+        <h2> Thoughts and Essays by <%= @user.name %> </h2> 
         <!-- looping through the posts of a user -->
         <% @user.posts.each do |post| %>
           <h3> <%= link_to post.title, post_path(post) %> </h3>
