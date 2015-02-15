@@ -1,0 +1,82 @@
+/* GENERAL */
+
+body{
+  background: asset-url("ny.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 90px;
+  .container-fluid{
+    font-family: Courier;
+    color: white;
+    a{
+      color: white;
+    }
+    p{
+      overflow: hidden;
+    }
+  }
+}
+
+#twitter_blue{
+  color: #4499FF;
+}
+
+
+
+/* HEADER */
+
+.header{
+  margin-right: 10px;
+  ul{
+    position: block; 
+    margin-top: 10px;
+    width: 100%;
+    list-style-type: none;
+    margin-bottom: 0px;
+  }
+  .inside_ul{
+    float: right;
+  }
+  li{ 
+      display: inline;
+      padding: 0px 5px;
+      color: #A10000;
+    a{
+      background-color: #A10000;
+      padding: 5px 10px;
+      opacity: 0.8;
+      -webkit-border-radius: 1px;
+      -moz-border-radius: 1px;
+      border-radius: 1px;
+      color: white;
+    }
+  }
+}
+
+
+
+/* BACKEND */
+
+.your_posts{
+  ol{
+    li{
+      font-size: 22px; 
+      line-height: 1.25;
+      margin-bottom: 15px; 
+    }
+    @media (max-width: 768px){
+      li{
+        font-size: 14px; 
+      }
+    }
+  }
+}
+
+.sign_up_area{
+  width: 300px;
+  input{
+    margin-bottom: 10px;
+  }
+}

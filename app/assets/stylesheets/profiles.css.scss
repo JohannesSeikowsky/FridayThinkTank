@@ -1,3 +1,61 @@
-// Place all the styles related to the Profiles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* SHOW PAGE OF PROFILE */
+
+.profile_on_profile{
+  margin-top: 32px;
+  img{
+    width: 100%;
+    height: auto;
+    border: 8px solid white;
+    border-radius: 4px;
+  }
+  p{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    font-family: Courier;
+  }
+  a:hover{
+    background-color: white;
+  }
+}
+
+.posts_on_profile{
+  margin-top: 32px;
+  background-color: white;
+  padding: 10px 40px 44px 40px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  h2{
+    color: black;
+    background-color: #4499FF; 
+    margin-bottom: 30px;
+  }
+  h3{
+    color: black;
+    font-size: 23px;
+    a:hover{
+      background-color: #4499FF;
+    }
+    a{
+      color: black;
+    }
+  }
+  p{
+    margin-top: 0px;
+  }
+  @media (max-width: 992px){
+    margin-top: 0px;  
+  }
+  @media (max-width: 550px){
+    h2{
+      font-size: 20px;
+    }  
+    h3{
+      font-size: 18px;    
+    }
+  }
+}
