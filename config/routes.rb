@@ -6,6 +6,10 @@ Rails.application.routes.draw do
 
   match "about", to: "static_pages#about", via: :get
 
+  match "johannes", to: "profiles#show", via: :get
+
+
+
   devise_for :users
 
   resources :posts do 

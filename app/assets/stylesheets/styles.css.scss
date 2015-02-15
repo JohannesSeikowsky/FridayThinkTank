@@ -208,7 +208,7 @@ h1#headline{
 }
 
 .posts_on_profile{
-  margin-top: 45px; 
+  margin-top: 45px;
   background-color: white;
   padding: 10px 40px 44px 40px;
   border-radius: 4px;
@@ -218,6 +218,9 @@ h1#headline{
     color: black;
     background-color: #4499FF; 
     margin-bottom: 30px;
+  }
+  h3{
+    color: black;
   }
   @media (max-width: 550px){
     h2{
@@ -280,7 +283,7 @@ h1#headline{
 }
 
 .right_sidebar_on_homepage{
-  margin-top: 96px;
+  margin-top: 94px;
   padding: 5px 35px 30px 35px;
   background-color: #A10000;
   opacity: 0.8;

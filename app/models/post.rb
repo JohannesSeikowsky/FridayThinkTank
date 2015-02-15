@@ -8,4 +8,9 @@ validates :content, presence: true
 belongs_to :user
 has_many :comments
 
+ 
+def to_param
+  "#{id}-#{title}".parameterize
+end 
+
 end
