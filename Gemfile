@@ -35,7 +35,7 @@ gem 'devise', '~> 3.4.0'
 gem "paperclip", "~> 4.2"
 
 # AWS to use s3 bucket for uploaded file storage
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 
 
 
