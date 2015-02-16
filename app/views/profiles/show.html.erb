@@ -1,13 +1,12 @@
 <% provide(:title, @user.name+" "+"- Profile") %>
 
-
 <!-- If the respective user has a profile -->
 <% unless @user.profile.nil? %> 
   <!-- image on user profile -->
   <div class="row">
     <div class="col-xs-8 col-xs-offset-2 col-md-3 col-md-offset-1">
       <div class="profile_on_profile">
-          <%= image_tag @profile.image.url(timestamp: false) %>
+          <%= image_tag @profile.image.url %>
           <h4 id="twitter_blue"> Thoughts: <%= @user.posts.count %> </h4> 
           <p> <%= h(@profile.description).gsub(/\n/, '<br/>').html_safe %> </p>
       </div>
