@@ -6,7 +6,7 @@
     <% unless @user.profile.nil? %> 
       <div class="profile_on_post">
         <a href="<%= user_profile_path(@user) %>"> 
-          <%= image_tag(@profile.image) %>
+          <%= image_tag(@profile.image.url) %>
           <h3> <%= @user.name %> <br> See Profile </h3> 
         </a>
       </div>
