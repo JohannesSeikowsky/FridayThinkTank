@@ -79,4 +79,15 @@ Rails.application.configure do
 
   # Telling Paperclip for Image Upload the path to ImageMagik, which is needed.
   Paperclip.options[:command_path] = "/usr/local/bin/convert"
+
+  # Making Paperclip work with AWS s3 Bucket
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['S3_BUCKET_NAME'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+    }
+  }
+  
 end

@@ -34,6 +34,10 @@ gem 'devise', '~> 3.4.0'
 # Paperclip for Image Upload
 gem "paperclip", "~> 4.2"
 
+# AWS to use s3 bucket for uploaded file storage
+gem 'aws-sdk'
+
+
 
 gem 'arel', '6.0.0.beta2'
 # making database migrations after scaffold possible

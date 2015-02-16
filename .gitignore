@@ -14,3 +14,8 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# ENV variables - being used because they shall not be seen by anyone for safety reasons
+/config/initializers/my_variables.rb
+
+
