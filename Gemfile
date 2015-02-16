@@ -38,7 +38,6 @@ gem "paperclip", "~> 4.2"
 gem 'aws-sdk', '< 2.0'
 
 
-
 gem 'arel', '6.0.0.beta2'
 # making database migrations after scaffold possible
 

@@ -28,9 +28,13 @@ class ProfilesController < ApplicationController
   def create
     @user = current_user
     @profile = @user.build_profile(profile_params)
-    @profile.save
+    if @profile.save
     redirect_to user_profile_path(@user)
     flash[:notice] = "Your profile has been created."
+    else
+    redirect_to user_profile_path(@user)
+    flash[:notice] = "Failure. Sorry Profile was not created."    
+    end 
   end
 
   def update
@@ -52,6 +56,6 @@ class ProfilesController < ApplicationController
     end
 
     def profile_params
-      params.require(:profile).permit(:description, :user_id, :image)
+      params.require(:profile).permit(:description, :user_id, :image, :image_file_name, :image_content_type, :image_file_size, :image_updated_at)
     end
 end
