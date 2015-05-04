@@ -6,10 +6,10 @@
         <% unless current_user.profile.nil? %> 
           <li> <%= link_to "Manage Profile", edit_user_profile_path(current_user) %> </li>                    
         <% else %> 
-          <li>  <%= link_to "CREATE PROFILE", new_user_profile_path(current_user) %> </li>
+          <li>  <%= link_to "CREATE PROFILE", new_user_profile_path(current_user), id: "create_profile_button" %> </li>
         <% end %> 
         <li>  <%= link_to "Manage Posts", user_posts_path(current_user) %> </li> 
-        <li>  <%= link_to "Write Post", new_user_post_path(current_user) %> </li> 
+        <li>  <%= link_to "New Post", new_user_post_path(current_user) %> </li> 
         <li style="padding-right: 0px;"> <%= link_to "Log Out", destroy_user_session_path, method: :delete %> </li> 
       </div>
     </ul> 
@@ -22,3 +22,13 @@
       </ul> 
       <% end %>
 </div> 
+
+<style>
+#create_profile_button{
+    background-color: yellow;
+    color: green;
+    padding: 50px;
+    font-size: 30px;
+    border: 12px solid #8027A9;
+}
+</style>

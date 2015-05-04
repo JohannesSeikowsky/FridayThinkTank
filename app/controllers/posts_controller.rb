@@ -55,7 +55,7 @@ class PostsController < ApplicationController
   def update
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to @post, notice: 'Post was successfully edited.' }
+        format.html { redirect_to edit_post_path(@post), notice: 'Editing done. Is there more editing to be done?' }
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit }

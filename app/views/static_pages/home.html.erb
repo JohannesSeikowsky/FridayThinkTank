@@ -17,12 +17,12 @@
 <!-- Sidebar Homepage -->
 <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
   <div class="right_sidebar_on_homepage">
-    <h1 id="twitter_blue"> The people writing this stuff: </h1>
     <% @users.each do |user| %>
       <h1> <%= link_to user.name, user_profile_path(user) %> </h1> 
     <% end %>
     <br>
-      <h5 style="color: #F2F200; font-size: 16px; line-height: 1.15;"> FridayThinkTank is a collective blog by the people listed above. Each post is an answer to the simple, yet interesting question: "What was your most interesting thought this week?". We hope you enjoy reading as much as we enjoy writing. </h5>
+      <h5 style="color: #F2F200; font-size: 16px; line-height: 1.15;"> FridayThinkTank is a collective blog by the people listed above. All writing happens freely, voluntarily and exclusively for the fun of it. There are no thematic restrictions. The only pervasive requirement is not to be boring. We hope you enjoy reading as much as we enjoy writing. 
+      </h5>
       <br>
   </div>
 </div> 
