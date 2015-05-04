@@ -17,6 +17,7 @@
 <!-- Sidebar Homepage -->
 <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
   <div class="right_sidebar_on_homepage">
+    <h1 id="twitter_blue"> The people writing this stuff: </h1>
     <% @users.each do |user| %>
       <h1> <%= link_to user.name, user_profile_path(user) %> </h1> 
     <% end %>
